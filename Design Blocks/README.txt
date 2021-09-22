@@ -1,0 +1,1 @@
+Place these in your design block folder to use (Default: \Documents\EAGLE\design blocks)
