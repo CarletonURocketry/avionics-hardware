@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -46,10 +46,10 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -211,6 +211,7 @@ KEYSWITCH</text>
 <text x="67.2592" y="83.1596" size="5" layer="22" rot="MR0">1</text>
 <text x="32.6136" y="83.3882" size="5" layer="22" rot="MR0">2</text>
 <text x="13.8176" y="83.2358" size="5" layer="22" rot="MR0">4</text>
+<text x="5.3302" y="60.0776" size="1.778" layer="21" rot="R90">JLCJLCJLC</text>
 </plain>
 <libraries>
 <library name="CU inSpace 2019 Parts">
@@ -2507,7 +2508,6 @@ design rules under a new name.</description>
 <via x="8.9238" y="13.9238" extent="1-16" drill="0.35"/>
 <via x="7.9238" y="15.9238" extent="1-16" drill="0.35"/>
 <via x="8.9238" y="17.9238" extent="1-16" drill="0.35"/>
-<via x="7.9238" y="43.9238" extent="1-16" drill="0.35"/>
 <via x="8.9238" y="69.9238" extent="1-16" drill="0.35"/>
 <via x="7.9238" y="71.9238" extent="1-16" drill="0.35"/>
 <via x="8.9238" y="73.9238" extent="1-16" drill="0.35"/>
@@ -2524,7 +2524,6 @@ design rules under a new name.</description>
 <via x="10.9238" y="13.9238" extent="1-16" drill="0.35"/>
 <via x="9.9238" y="15.9238" extent="1-16" drill="0.35"/>
 <via x="10.9238" y="17.9238" extent="1-16" drill="0.35"/>
-<via x="9.9238" y="43.9238" extent="1-16" drill="0.35"/>
 <via x="10.9238" y="69.9238" extent="1-16" drill="0.35"/>
 <via x="9.9238" y="71.9238" extent="1-16" drill="0.35"/>
 <via x="10.9238" y="73.9238" extent="1-16" drill="0.35"/>
@@ -2552,7 +2551,6 @@ design rules under a new name.</description>
 <via x="11.9238" y="35.9238" extent="1-16" drill="0.35"/>
 <via x="12.9238" y="37.9238" extent="1-16" drill="0.35"/>
 <via x="12.9238" y="41.9238" extent="1-16" drill="0.35"/>
-<via x="11.9238" y="43.9238" extent="1-16" drill="0.35"/>
 <via x="12.9238" y="45.9238" extent="1-16" drill="0.35"/>
 <via x="12.9238" y="49.9238" extent="1-16" drill="0.35"/>
 <via x="12.9238" y="53.9238" extent="1-16" drill="0.35"/>
@@ -3681,6 +3679,7 @@ design rules under a new name.</description>
 <wire x1="39" y1="45" x2="39" y2="43" width="2" layer="16"/>
 <wire x1="50" y1="48" x2="42" y2="48" width="2" layer="16"/>
 <wire x1="42" y1="48" x2="39" y2="45" width="2" layer="16"/>
+<wire x1="39" y1="43" x2="39" y2="41" width="1.524" layer="1"/>
 <wire x1="39" y1="43" x2="39" y2="41" width="2" layer="16"/>
 </signal>
 <signal name="EMATCH2+">
@@ -3720,6 +3719,7 @@ design rules under a new name.</description>
 <wire x1="47.9044" y1="50.8254" x2="39.0906" y2="50.8254" width="2" layer="16"/>
 <wire x1="39.0906" y1="50.8254" x2="35" y2="46.7348" width="2" layer="16"/>
 <wire x1="35" y1="43" x2="35" y2="41" width="2" layer="16"/>
+<wire x1="35" y1="43" x2="35" y2="41" width="1.524" layer="1"/>
 </signal>
 <signal name="EMATCH1_SUPPLY">
 <contactref element="JP4" pad="2"/>
