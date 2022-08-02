@@ -1,0 +1,87 @@
+Added Component: Designator=J?(SAMTEC_MECF-40-01-X-DV-WT)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samtec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "MECF-40-01-X-DV-WT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-01
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-02
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-03
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-04
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-05
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-06
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-07
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-08
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-09
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-10
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-11
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-12
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-13
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-14
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-15
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-16
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-17
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-18
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-19
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-20
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-21
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-22
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-23
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-24
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-25
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-26
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-27
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-28
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-29
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-30
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-31
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-32
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-33
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-34
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-35
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-36
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-37
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-38
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-39
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-40
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-41
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-42
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-43
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-44
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-45
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-46
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-47
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-48
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-49
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-50
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-51
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-52
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-53
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-54
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-55
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-56
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-57
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-58
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-59
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-60
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-61
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-62
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-63
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-64
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-65
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-66
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-67
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-68
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-69
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-70
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-71
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-72
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-73
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-74
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-75
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-76
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-77
+Added Pin To Net: NetName=NetJ?_01 Pin=J?-78
+Added Net: Name=NetJ?_01
+Added Member To Class: ClassName=BCK_REVA Member=Component J? MECF-40-01-X-DV-WT
