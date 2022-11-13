@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=+3.3V Pin=J1-14
+Removed Pin From Net: NetName=+5V Pin=J1-15
+Removed Pin From Net: NetName=GND Pin=J1-17
+Removed Pin From Net: NetName=GND Pin=J1-18
+Removed Pin From Net: NetName=+5V Pin=J1-73
+Removed Pin From Net: NetName=+5V Pin=J1-75
+Added Pin To Net: NetName=+5V Pin=J1-14
+Added Pin To Net: NetName=+3.3V Pin=J1-15
+Added Pin To Net: NetName=+3.3V Pin=J1-17
+Added Pin To Net: NetName=+3.3V Pin=J1-18
+Added Pin To Net: NetName=+3.3V Pin=J1-73
+Added Pin To Net: NetName=+3.3V Pin=J1-75
+Added Room: Name=BCK_REVA
+Added Room: Name=BCK_REVA_2
+Added Room: Name=BCK_REVA_3
