@@ -1,0 +1,9 @@
+Added Component: Designator=L1(INSPACE_7CM_LETTERS)
+Add component (AddParameter): Name = "DeviceName"; Value = "7CM_L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DeviceSetName"; Value = "INSPACE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "GateName_1"; Value = "G$1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LibraryName"; Value = "Logos"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "INSPACE_7CM_LETTERS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SymbolName_1"; Value = "INSPACE_LOGO"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=BCK_REVA Member=Component L1 INSPACE7CM_L
+Added Room: Name=BCK_REVA_2

@@ -1,0 +1,241 @@
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-02
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-03
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-06
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-07
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-10
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-13
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-14
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-15
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-16
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-19
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-20
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-21
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-22
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-23
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-24
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-25
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-26
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-27
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-28
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-29
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-30
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-31
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-32
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-33
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-34
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-37
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-38
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-39
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-40
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-41
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-42
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-43
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-44
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-45
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-47
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-48
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-49
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-50
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-51
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-54
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-55
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-57
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-58
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-59
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-60
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-61
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-62
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-63
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-64
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-65
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-66
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-67
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-68
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-69
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-70
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-73
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-74
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-75
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-76
+Removed Pin From Net: NetName=NetJ?_01 Pin=J1-78
+Add Component: Footprint Not Found KPDELPS1FPQISI34U5152S
+Add Component: Footprint Not Found KPDELPS1FPQISI34U5152S
+Add Component: Footprint Not Found KPDELPS1FPQISI34U5152S
+Add Component: Footprint Not Found SAMTEC_MECF-40-01-X-DV-WT
+Add Component: Footprint Not Found SAMTEC_MECF-40-01-X-DV-WT
+Added Component: Designator=R1(RESC2013X60X40NL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERA6AEB201V"; VariantName = "[No Variations]"
+Added Component: Designator=R2(RESC2013X60X40NL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERA6AEB201V"; VariantName = "[No Variations]"
+Added Component: Designator=R3(RESC2013X60X40NL20T25)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERA6AEB201V"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin J2-01
+Add Pin To Net: Unknown Pin: Pin J2-01
+Add Pin To Net: Unknown Pin: Pin J2-04
+Add Pin To Net: Unknown Pin: Pin J2-04
+Add Pin To Net: Unknown Pin: Pin J2-05
+Add Pin To Net: Unknown Pin: Pin J2-05
+Add Pin To Net: Unknown Pin: Pin J2-08
+Add Pin To Net: Unknown Pin: Pin J2-08
+Add Pin To Net: Unknown Pin: Pin J2-09
+Add Pin To Net: Unknown Pin: Pin J2-09
+Add Pin To Net: Unknown Pin: Pin J2-11
+Add Pin To Net: Unknown Pin: Pin J2-11
+Add Pin To Net: Unknown Pin: Pin J2-12
+Add Pin To Net: Unknown Pin: Pin J2-12
+Add Pin To Net: Unknown Pin: Pin J2-17
+Add Pin To Net: Unknown Pin: Pin J2-17
+Add Pin To Net: Unknown Pin: Pin J2-18
+Add Pin To Net: Unknown Pin: Pin J2-18
+Add Pin To Net: Unknown Pin: Pin J2-35
+Add Pin To Net: Unknown Pin: Pin J2-35
+Add Pin To Net: Unknown Pin: Pin J2-36
+Add Pin To Net: Unknown Pin: Pin J2-36
+Add Pin To Net: Unknown Pin: Pin J2-46
+Add Pin To Net: Unknown Pin: Pin J2-46
+Add Pin To Net: Unknown Pin: Pin J2-52
+Add Pin To Net: Unknown Pin: Pin J2-52
+Add Pin To Net: Unknown Pin: Pin J2-53
+Add Pin To Net: Unknown Pin: Pin J2-53
+Add Pin To Net: Unknown Pin: Pin J2-56
+Add Pin To Net: Unknown Pin: Pin J2-56
+Add Pin To Net: Unknown Pin: Pin J2-71
+Add Pin To Net: Unknown Pin: Pin J2-71
+Add Pin To Net: Unknown Pin: Pin J2-72
+Add Pin To Net: Unknown Pin: Pin J2-72
+Add Pin To Net: Unknown Pin: Pin J2-77
+Add Pin To Net: Unknown Pin: Pin J2-77
+Change Net Name : Old Net Name=NetJ?_01 New Net Name=NetJ1_01
+Added Net: Name=GND
+Added Pin To Net: NetName=NetD1_2 Pin=R1-2
+Added Net: Name=NetD1_2
+Added Pin To Net: NetName=NetD2_2 Pin=R2-2
+Added Net: Name=NetD2_2
+Added Pin To Net: NetName=NetD3_2 Pin=R3-2
+Added Net: Name=NetD3_2
+Added Pin To Net: NetName=NetJ1_02 Pin=J1-02
+Added Net: Name=NetJ1_02
+Added Pin To Net: NetName=NetJ1_03 Pin=J1-03
+Added Net: Name=NetJ1_03
+Added Pin To Net: NetName=NetJ1_06 Pin=J1-06
+Added Net: Name=NetJ1_06
+Added Pin To Net: NetName=NetJ1_07 Pin=J1-07
+Added Net: Name=NetJ1_07
+Added Pin To Net: NetName=NetJ1_10 Pin=J1-10
+Added Net: Name=NetJ1_10
+Added Pin To Net: NetName=NetJ1_13 Pin=J1-13
+Added Pin To Net: NetName=NetJ1_13 Pin=J1-15
+Added Pin To Net: NetName=NetJ1_13 Pin=J1-73
+Added Pin To Net: NetName=NetJ1_13 Pin=J1-75
+Added Net: Name=NetJ1_13
+Added Pin To Net: NetName=NetJ1_14 Pin=J1-14
+Added Pin To Net: NetName=NetJ1_14 Pin=J1-16
+Added Pin To Net: NetName=NetJ1_14 Pin=J1-74
+Added Pin To Net: NetName=NetJ1_14 Pin=J1-76
+Added Net: Name=NetJ1_14
+Added Pin To Net: NetName=NetJ1_19 Pin=J1-19
+Added Net: Name=NetJ1_19
+Added Pin To Net: NetName=NetJ1_20 Pin=J1-20
+Added Net: Name=NetJ1_20
+Added Pin To Net: NetName=NetJ1_21 Pin=J1-21
+Added Net: Name=NetJ1_21
+Added Pin To Net: NetName=NetJ1_22 Pin=J1-22
+Added Net: Name=NetJ1_22
+Added Pin To Net: NetName=NetJ1_23 Pin=J1-23
+Added Net: Name=NetJ1_23
+Added Pin To Net: NetName=NetJ1_24 Pin=J1-24
+Added Net: Name=NetJ1_24
+Added Pin To Net: NetName=NetJ1_25 Pin=J1-25
+Added Net: Name=NetJ1_25
+Added Pin To Net: NetName=NetJ1_26 Pin=J1-26
+Added Net: Name=NetJ1_26
+Added Pin To Net: NetName=NetJ1_27 Pin=J1-27
+Added Net: Name=NetJ1_27
+Added Pin To Net: NetName=NetJ1_28 Pin=J1-28
+Added Net: Name=NetJ1_28
+Added Pin To Net: NetName=NetJ1_29 Pin=J1-29
+Added Net: Name=NetJ1_29
+Added Pin To Net: NetName=NetJ1_30 Pin=J1-30
+Added Net: Name=NetJ1_30
+Added Pin To Net: NetName=NetJ1_31 Pin=J1-31
+Added Net: Name=NetJ1_31
+Added Pin To Net: NetName=NetJ1_32 Pin=J1-32
+Added Net: Name=NetJ1_32
+Added Pin To Net: NetName=NetJ1_33 Pin=J1-33
+Added Net: Name=NetJ1_33
+Added Pin To Net: NetName=NetJ1_34 Pin=J1-34
+Added Net: Name=NetJ1_34
+Added Pin To Net: NetName=NetJ1_37 Pin=J1-37
+Added Net: Name=NetJ1_37
+Added Pin To Net: NetName=NetJ1_38 Pin=J1-38
+Added Net: Name=NetJ1_38
+Added Pin To Net: NetName=NetJ1_39 Pin=J1-39
+Added Net: Name=NetJ1_39
+Added Pin To Net: NetName=NetJ1_40 Pin=J1-40
+Added Net: Name=NetJ1_40
+Added Pin To Net: NetName=NetJ1_41 Pin=J1-41
+Added Net: Name=NetJ1_41
+Added Pin To Net: NetName=NetJ1_42 Pin=J1-42
+Added Net: Name=NetJ1_42
+Added Pin To Net: NetName=NetJ1_43 Pin=J1-43
+Added Net: Name=NetJ1_43
+Added Pin To Net: NetName=NetJ1_44 Pin=J1-44
+Added Net: Name=NetJ1_44
+Added Pin To Net: NetName=NetJ1_45 Pin=J1-45
+Added Net: Name=NetJ1_45
+Added Pin To Net: NetName=NetJ1_47 Pin=J1-47
+Added Net: Name=NetJ1_47
+Added Pin To Net: NetName=NetJ1_48 Pin=J1-48
+Added Net: Name=NetJ1_48
+Added Pin To Net: NetName=NetJ1_49 Pin=J1-49
+Added Net: Name=NetJ1_49
+Added Pin To Net: NetName=NetJ1_50 Pin=J1-50
+Added Net: Name=NetJ1_50
+Added Pin To Net: NetName=NetJ1_51 Pin=J1-51
+Added Net: Name=NetJ1_51
+Added Pin To Net: NetName=NetJ1_54 Pin=J1-54
+Added Net: Name=NetJ1_54
+Added Pin To Net: NetName=NetJ1_55 Pin=J1-55
+Added Net: Name=NetJ1_55
+Added Pin To Net: NetName=NetJ1_57 Pin=J1-57
+Added Net: Name=NetJ1_57
+Added Pin To Net: NetName=NetJ1_58 Pin=J1-58
+Added Net: Name=NetJ1_58
+Added Pin To Net: NetName=NetJ1_59 Pin=J1-59
+Added Net: Name=NetJ1_59
+Added Pin To Net: NetName=NetJ1_60 Pin=J1-60
+Added Pin To Net: NetName=NetJ1_60 Pin=J1-62
+Added Pin To Net: NetName=NetJ1_60 Pin=J1-64
+Added Pin To Net: NetName=NetJ1_60 Pin=J1-66
+Added Pin To Net: NetName=NetJ1_60 Pin=J1-68
+Added Pin To Net: NetName=NetJ1_60 Pin=J1-70
+Added Net: Name=NetJ1_60
+Added Pin To Net: NetName=NetJ1_61 Pin=J1-61
+Added Net: Name=NetJ1_61
+Added Pin To Net: NetName=NetJ1_63 Pin=J1-63
+Added Net: Name=NetJ1_63
+Added Pin To Net: NetName=NetJ1_65 Pin=J1-65
+Added Net: Name=NetJ1_65
+Added Pin To Net: NetName=NetJ1_67 Pin=J1-67
+Added Net: Name=NetJ1_67
+Added Pin To Net: NetName=NetJ1_69 Pin=J1-69
+Added Net: Name=NetJ1_69
+Added Pin To Net: NetName=NetJ1_78 Pin=J1-78
+Added Pin To Net: NetName=NetJ1_78 Pin=R1-1
+Added Pin To Net: NetName=NetJ1_78 Pin=R2-1
+Added Pin To Net: NetName=NetJ1_78 Pin=R3-1
+Added Net: Name=NetJ1_78
+Added Net: Name=NetJ2_78
+Add Net: Net with name "NetJ2_78" already exists
+Add Class Member: Failed to add class member : Component D1 KP_DELPS1.FP-QISI-34-U515-2-S
+Add Class Member: Failed to add class member : Component D2 KP_DELPS1.FP-QISI-34-U515-2-S
+Add Class Member: Failed to add class member : Component D3 KP_DELPS1.FP-QISI-34-U515-2-S
+Add Class Member: Failed to add class member : Component J2 MECF-40-01-X-DV-WT
+Add Class Member: Failed to add class member : Component J2 MECF-40-01-X-DV-WT
+Added Member To Class: ClassName=BCK_REVA Member=Component R1 ERA6AEB201V
+Added Member To Class: ClassName=BCK_REVA Member=Component R2 ERA6AEB201V
+Added Member To Class: ClassName=BCK_REVA Member=Component R3 ERA6AEB201V
+Added Room: Name=BCK_REVA

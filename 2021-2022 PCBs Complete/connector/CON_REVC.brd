@@ -2370,7 +2370,6 @@ design rules under a new name.</description>
 <polygon width="0.1524" layer="16" isolate="0.6096" rank="6">
 <vertex x="0" y="0"/>
 <vertex x="0" y="90.805"/>
-<vertex x="93.98" y="90.805"/>
 <vertex x="95.885" y="90.805"/>
 <vertex x="95.885" y="0"/>
 </polygon>
