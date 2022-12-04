@@ -1,0 +1,15 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 10:38:27 PM On 2022-11-28
+
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of PCB Document [TEST_REVA.PcbDoc]
+   Generated File[TEST_REVA.EXTREP]
+   Generated File[TEST_REVA.REP]
+
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 10:38:28 PM On 2022-11-28
