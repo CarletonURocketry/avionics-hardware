@@ -1,0 +1,61 @@
+Change Component Designator: OldDesignator=J2 NewDesignator=J3
+Change Net Name : Old Net Name=NetJ1_01 New Net Name=GND
+Change Net Name : Old Net Name=NetJ1_02 New Net Name=SPI_SCK
+Change Net Name : Old Net Name=NetJ1_03 New Net Name=I2C0_SCL
+Change Net Name : Old Net Name=NetJ1_06 New Net Name=SPI_MOSI
+Change Net Name : Old Net Name=NetJ1_07 New Net Name=I2C0_SDA
+Change Net Name : Old Net Name=NetJ1_10 New Net Name=SPI_MISO
+Change Net Name : Old Net Name=NetJ1_13 New Net Name=+5V
+Change Net Name : Old Net Name=NetJ1_14 New Net Name=+3.3V
+Change Net Name : Old Net Name=NetJ1_19 New Net Name=GPIO0
+Change Net Name : Old Net Name=NetJ1_20 New Net Name=UART0_RX
+Change Net Name : Old Net Name=NetJ1_21 New Net Name=GPIO1
+Change Net Name : Old Net Name=NetJ1_22 New Net Name=UART0_TX
+Change Net Name : Old Net Name=NetJ1_23 New Net Name=GPIO2
+Change Net Name : Old Net Name=NetJ1_24 New Net Name=UART1_RX
+Change Net Name : Old Net Name=NetJ1_25 New Net Name=GPIO3
+Change Net Name : Old Net Name=NetJ1_26 New Net Name=UART1_TX
+Change Net Name : Old Net Name=NetJ1_27 New Net Name=GPIO4
+Change Net Name : Old Net Name=NetJ1_28 New Net Name=UART2_RX
+Change Net Name : Old Net Name=NetJ1_29 New Net Name=GPIO5
+Change Net Name : Old Net Name=NetJ1_30 New Net Name=UART2_TX
+Change Net Name : Old Net Name=NetJ1_31 New Net Name=GPIO6
+Change Net Name : Old Net Name=NetJ1_32 New Net Name=UART3_RX
+Change Net Name : Old Net Name=NetJ1_33 New Net Name=GPIO7
+Change Net Name : Old Net Name=NetJ1_34 New Net Name=UART3_TX
+Change Net Name : Old Net Name=NetJ1_37 New Net Name=A0
+Change Net Name : Old Net Name=NetJ1_38 New Net Name=DAC0
+Change Net Name : Old Net Name=NetJ1_39 New Net Name=A1
+Change Net Name : Old Net Name=NetJ1_40 New Net Name=DAC1
+Change Net Name : Old Net Name=NetJ1_41 New Net Name=A2
+Change Net Name : Old Net Name=NetJ1_42 New Net Name=A13
+Change Net Name : Old Net Name=NetJ1_43 New Net Name=A3
+Change Net Name : Old Net Name=NetJ1_44 New Net Name=A12
+Change Net Name : Old Net Name=NetJ1_45 New Net Name=A4
+Change Net Name : Old Net Name=NetJ1_47 New Net Name=A5
+Change Net Name : Old Net Name=NetJ1_48 New Net Name=GPIO23
+Change Net Name : Old Net Name=NetJ1_49 New Net Name=A6
+Change Net Name : Old Net Name=NetJ1_50 New Net Name=GPIO22
+Change Net Name : Old Net Name=NetJ1_51 New Net Name=A7
+Change Net Name : Old Net Name=NetJ1_54 New Net Name=I2C1_SCL
+Change Net Name : Old Net Name=NetJ1_55 New Net Name=GPIO8
+Change Net Name : Old Net Name=NetJ1_57 New Net Name=GPIO9
+Change Net Name : Old Net Name=NetJ1_58 New Net Name=I2C1_SDA
+Change Net Name : Old Net Name=NetJ1_59 New Net Name=GPIO10
+Change Net Name : Old Net Name=NetJ1_60 New Net Name=Port
+Change Net Name : Old Net Name=NetJ1_61 New Net Name=GPIO11
+Change Net Name : Old Net Name=NetJ1_63 New Net Name=GPIO12
+Change Net Name : Old Net Name=NetJ1_65 New Net Name=GPIO13
+Change Net Name : Old Net Name=NetJ1_67 New Net Name=GPIO14
+Change Net Name : Old Net Name=NetJ1_69 New Net Name=GPIO15
+Added Pin To Net: NetName=SLOT1LED Pin=J1-78
+Added Pin To Net: NetName=SLOT1LED Pin=R1-1
+Added Net: Name=SLOT1LED
+Added Pin To Net: NetName=SLOT2LED Pin=J2-78
+Added Pin To Net: NetName=SLOT2LED Pin=R2-1
+Added Net: Name=SLOT2LED
+Added Pin To Net: NetName=SLOT3LED Pin=J3-78
+Added Pin To Net: NetName=SLOT3LED Pin=R3-1
+Added Net: Name=SLOT3LED
+Added Member To Class: ClassName=BCK_REVA Member=Component J3 MECF-40-01-X-DV-WT
+Added Room: Name=BCK_REVA
