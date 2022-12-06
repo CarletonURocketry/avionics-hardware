@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=NetJ2_2 Pin=J2-1
+Added Pin To Net: NetName=Net2_3 Pin=J2-1
+Added Room: Name=DEP_REVC
