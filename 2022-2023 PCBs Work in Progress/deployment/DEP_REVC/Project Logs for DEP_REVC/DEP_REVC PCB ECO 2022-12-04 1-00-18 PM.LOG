@@ -1,9 +1,0 @@
-Removed Pin From Net: NetName=NetR5_1 Pin=U1-1
-Removed Pin From Net: NetName=NetJ1_1 Pin=U1-4
-Removed Pin From Net: NetName=NetR6_1 Pin=U2-1
-Removed Pin From Net: NetName=NetJ3_1 Pin=U2-4
-Added Pin To Net: NetName=NetJ1_1 Pin=U1-1
-Added Pin To Net: NetName=NetR5_1 Pin=U1-4
-Added Pin To Net: NetName=NetJ3_1 Pin=U2-1
-Added Pin To Net: NetName=NetR6_1 Pin=U2-4
-Added Room: Name=DEP_REVC
