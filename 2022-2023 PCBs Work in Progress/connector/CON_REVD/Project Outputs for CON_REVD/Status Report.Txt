@@ -1,0 +1,36 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 8:54:34 PM On 2022-12-06
+
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : Variant [[No Variations]] of PCB Document [CON_REVD.PcbDoc]
+   Generated File[CON_REVD_Copper_Signal_Top.gbr]
+   Generated File[CON_REVD_Copper_Signal_Bot.gbr]
+   Generated File[CON_REVD_Pads_Bot.gbr]
+   Generated File[CON_REVD_Pads_Top.gbr]
+   Generated File[CON_REVD_Legend_Top.gbr]
+   Generated File[CON_REVD_Legend_Bot.gbr]
+   Generated File[CON_REVD_Soldermask_Top.gbr]
+   Generated File[CON_REVD_Soldermask_Bot.gbr]
+   Generated File[CON_REVD_Paste_Top.gbr]
+   Generated File[CON_REVD_Paste_Bot.gbr]
+   Generated File[CON_REVD_Top_3D_Body.gbr]
+   Generated File[CON_REVD_Top_Courtyard.gbr]
+   Generated File[CON_REVD_Top_Assembly.gbr]
+   Generated File[CON_REVD_Mechanical_15.gbr]
+   Generated File[CON_REVD_Top_Component_Center.gbr]
+   Generated File[CON_REVD_Bottom_Assembly.gbr]
+   Generated File[CON_REVD_Profile.gbr]
+   Generated File[CON_REVD_NPTH_Drill.gbr]
+   Generated File[CON_REVD_PTH_Drill.gbr]
+   Generated File[CON_REVD_Drawing_1.gbr]
+   Generated File[CON_REVD_Drillmap_1.gbr]
+   Generated File[CON_REVD.EXTREP]
+   Generated File[CON_REVD.REP]
+
+
+Files Generated   : 23
+Documents Printed : 0
+
+Finished Output Generation At 8:54:38 PM On 2022-12-06

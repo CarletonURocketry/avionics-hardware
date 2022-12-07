@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=Bat- Pin=B?-2
+Removed Pin From Net: NetName=Bat- Pin=B?-3
+Added Component: Designator=Batt(1049)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.keyelco.com/product.cfm/product_id/921"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "14mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1049"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "534-1049"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/1049?qs=%2F7TOpeL5Mz78b0pqEFIl5w%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Testing Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Testing Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Bat- Pin=Batt-5
+Added Pin To Net: NetName=Bat- Pin=Batt-6
+Added Pin To Net: NetName=SWITCH+ Pin=Batt-8
+Added Pin To Net: NetName=SWITCH+ Pin=Batt-9
+Added Pin To Net: NetName=SWITCH+ Pin=J1-2
+Added Net: Name=SWITCH+
