@@ -1,0 +1,267 @@
+*************************************************************
+FileName = INT_REVA.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : INT_REVA_Copper_Signal_Top.gbr
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Layer 1
+      File : INT_REVA_Copper_Signal_1.gbr
+
+    Adding Layer      : Layer 1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D14
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Layer 2
+      File : INT_REVA_Copper_Signal_2.gbr
+
+    Adding Layer      : Layer 2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D13
+    D14
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : INT_REVA_Copper_Signal_Bot.gbr
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : INT_REVA_Pads_Bot.gbr
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D14
+    D15
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : INT_REVA_Pads_Top.gbr
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D14
+    D15
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : INT_REVA_Legend_Top.gbr
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D18
+    D19
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : INT_REVA_Legend_Bot.gbr
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D13
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : INT_REVA_Soldermask_Top.gbr
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D21
+    D22
+    D23
+    D24
+    D25
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : INT_REVA_Soldermask_Bot.gbr
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D21
+    D22
+    D23
+    D24
+    D25
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : INT_REVA_Paste_Top.gbr
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : INT_REVA_Paste_Bot.gbr
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : INT_REVA_Mechanical_15.gbr
+
+    Adding Layer      : Mechanical 15
+
+
+Used DCodes :
+    D26
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 20
+      File : INT_REVA_Mechanical_20.gbr
+
+    Adding Layer      : Mechanical 20
+
+
+Used DCodes :
+    D27
+*************************************************************
+
+*************************************************************
+Generating : Profile
+      File : INT_REVA_Profile.gbr
+
+
+Used DCodes :
+    D28
+*************************************************************
+
+*************************************************************
+Generating : Plated through-hole drill file
+      File : INT_REVA_PTH_Drill.gbr
+
+
+Used DCodes :
+    D29
+    D30
+    D31
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : INT_REVA_Drawing_1.gbr
+
+    Adding Drill Pair : Top Layer-Bottom Layer
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D33
+    D34
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : INT_REVA_Drillmap_1.gbr
+
+    Adding Drill Pair : Top Layer-Bottom Layer
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D33
+*************************************************************
+

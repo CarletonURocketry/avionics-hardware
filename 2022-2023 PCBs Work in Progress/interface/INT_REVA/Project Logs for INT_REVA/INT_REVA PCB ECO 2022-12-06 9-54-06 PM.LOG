@@ -1,0 +1,85 @@
+Added Component: Designator=JP1(RHDR40W66P254_2X20_5146X500X1105P)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-1/sf-00022539.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "11.05mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Harwin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "M20-6102045"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "855-M20-6102045"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Harwin/M20-6102045?qs=pYcASEcTDE4FwHXnSlfG3Q%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Testing Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Testing Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=JP2(RHDR40W66P254_2X20_5146X500X1105P)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-1/sf-00022539.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "11.05mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Harwin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "M20-6102045"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "855-M20-6102045"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Harwin/M20-6102045?qs=pYcASEcTDE4FwHXnSlfG3Q%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Testing Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Testing Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=I2C0_SCL Pin=JP1-1
+Added Pin To Net: NetName=SPI_SCK Pin=JP1-2
+Added Pin To Net: NetName=GND Pin=JP1-3
+Added Pin To Net: NetName=GND Pin=JP1-4
+Added Pin To Net: NetName=SPI_MOSI Pin=JP1-6
+Added Pin To Net: NetName=I2C0_SDA Pin=JP1-7
+Added Pin To Net: NetName=SPI_MISO Pin=JP1-8
+Added Pin To Net: NetName=+3.3V Pin=JP1-15
+Added Pin To Net: NetName=+3.3V Pin=JP1-16
+Added Pin To Net: NetName=+5V Pin=JP1-17
+Added Pin To Net: NetName=+5V Pin=JP1-18
+Added Pin To Net: NetName=GND Pin=JP1-19
+Added Pin To Net: NetName=GND Pin=JP1-20
+Added Pin To Net: NetName=GND Pin=JP1-21
+Added Pin To Net: NetName=GND Pin=JP1-22
+Added Pin To Net: NetName=GPIO0 Pin=JP1-23
+Added Pin To Net: NetName=UART0_RX Pin=JP1-24
+Added Pin To Net: NetName=GPIO1 Pin=JP1-25
+Added Pin To Net: NetName=UART0_TX Pin=JP1-26
+Added Pin To Net: NetName=GPIO2 Pin=JP1-27
+Added Pin To Net: NetName=UART1_RX Pin=JP1-28
+Added Pin To Net: NetName=GPIO3 Pin=JP1-29
+Added Pin To Net: NetName=UART1_TX Pin=JP1-30
+Added Pin To Net: NetName=GPIO4 Pin=JP1-31
+Added Pin To Net: NetName=UART2_RX Pin=JP1-32
+Added Pin To Net: NetName=GPIO5 Pin=JP1-33
+Added Pin To Net: NetName=UART2_TX Pin=JP1-34
+Added Pin To Net: NetName=GPIO6 Pin=JP1-35
+Added Pin To Net: NetName=UART3_RX Pin=JP1-36
+Added Pin To Net: NetName=GPIO7 Pin=JP1-37
+Added Pin To Net: NetName=UART3_TX Pin=JP1-38
+Added Pin To Net: NetName=GND Pin=JP1-39
+Added Pin To Net: NetName=GND Pin=JP1-40
+Added Pin To Net: NetName=GND Pin=JP2-1
+Added Pin To Net: NetName=GND Pin=JP2-2
+Added Pin To Net: NetName=A0 Pin=JP2-3
+Added Pin To Net: NetName=DAC0 Pin=JP2-4
+Added Pin To Net: NetName=A1 Pin=JP2-5
+Added Pin To Net: NetName=DAC1 Pin=JP2-6
+Added Pin To Net: NetName=A2 Pin=JP2-7
+Added Pin To Net: NetName=A13 Pin=JP2-8
+Added Pin To Net: NetName=A3 Pin=JP2-9
+Added Pin To Net: NetName=A12 Pin=JP2-10
+Added Pin To Net: NetName=A4 Pin=JP2-11
+Added Pin To Net: NetName=A5 Pin=JP2-13
+Added Pin To Net: NetName=A6 Pin=JP2-15
+Added Pin To Net: NetName=A7 Pin=JP2-17
+Added Pin To Net: NetName=GND Pin=JP2-19
+Added Pin To Net: NetName=GND Pin=JP2-20
+Added Pin To Net: NetName=GPIO8 Pin=JP2-23
+Added Pin To Net: NetName=GPIO23 Pin=JP2-24
+Added Pin To Net: NetName=GPIO9 Pin=JP2-25
+Added Pin To Net: NetName=GPIO22 Pin=JP2-26
+Added Pin To Net: NetName=GPIO10 Pin=JP2-27
+Added Pin To Net: NetName=I2C1_SCL Pin=JP2-28
+Added Pin To Net: NetName=GPIO11 Pin=JP2-29
+Added Pin To Net: NetName=I2C1_SDA Pin=JP2-30
+Added Pin To Net: NetName=GPIO12 Pin=JP2-31
+Added Pin To Net: NetName=GPIO13 Pin=JP2-33
+Added Pin To Net: NetName=GPIO14 Pin=JP2-35
+Added Pin To Net: NetName=GPIO15 Pin=JP2-37
+Added Pin To Net: NetName=GND Pin=JP2-39
+Added Pin To Net: NetName=GND Pin=JP2-40

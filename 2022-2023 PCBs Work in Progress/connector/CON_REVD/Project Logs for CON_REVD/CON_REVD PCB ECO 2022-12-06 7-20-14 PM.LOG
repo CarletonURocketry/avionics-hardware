@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=Bat- Pin=Batt-5
+Removed Pin From Net: NetName=Bat+ Pin=J1-1
+Removed Pin From Net: NetName=SWITCH+ Pin=J1-2
+Removed Pin From Net: NetName=Bat- Pin=J?-1
+Removed Pin From Net: NetName=Bat- Pin=J?-1
+Removed Pin From Net: NetName=Bat+ Pin=J?-2
+Removed Pin From Net: NetName=Bat+ Pin=J?-2
+Added Pin To Net: NetName=Bat- Pin=Batt-7
+Added Pin To Net: NetName=SWITCH+ Pin=J1-1
+Added Pin To Net: NetName=Bat+ Pin=J1-2
+Added Pin To Net: NetName=Bat+ Pin=J?-1
+Added Pin To Net: NetName=Bat+ Pin=J?-1
+Added Pin To Net: NetName=Bat- Pin=J?-2
+Added Pin To Net: NetName=Bat- Pin=J?-2
