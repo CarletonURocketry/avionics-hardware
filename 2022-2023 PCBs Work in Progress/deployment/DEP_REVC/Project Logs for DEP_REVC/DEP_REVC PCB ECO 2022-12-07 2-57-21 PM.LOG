@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=NetD2_4 Pin=D2-4
+Removed Pin From Net: NetName=BAT+ Pin=R1-1
+Change Component Designator: OldDesignator=D1 NewDesignator=D2
+Change Component Designator: OldDesignator=D2 NewDesignator=D3
+Added Component: Designator=D1(ONSC-SOD-123-2-425-04_V)
+Add component (AddParameter): Name = "Case/Package"; Value = "SOD-123-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "500mW"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=BAT+ Pin=D1-1
+Added Pin To Net: NetName=NetD2_4 Pin=D2-4
+Added Pin To Net: NetName=GPIO23 Pin=R1-1
+Change Net Name : Old Net Name=BAT+ New Net Name=NetD1_1
+Change Net Name : Old Net Name=NetD1_1 New Net Name=NetD2_1
+Change Net Name : Old Net Name=NetD2_1 New Net Name=NetD3_1
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=Q3-1
+Added Pin To Net: NetName=NetD1_2 Pin=R7-2
+Added Net: Name=NetD1_2
+Added Pin To Net: NetName=NetD3_4 Pin=D3-4
+Added Net: Name=NetD3_4
+Added Member To Class: ClassName=DEP_REVC Member=Component D3 MBRB2545CTT4G

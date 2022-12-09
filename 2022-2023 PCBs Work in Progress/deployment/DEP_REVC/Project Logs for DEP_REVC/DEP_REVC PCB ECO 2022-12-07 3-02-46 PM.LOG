@@ -1,0 +1,113 @@
+Change Component Comment : Designator=BATT IN Old Comment=172648-0102 New Comment=1726480102
+Change Component Comment : Designator=e-Match 1 Old Comment=172648-0102 New Comment=1726480102
+Change Component Comment : Designator=e-Match 2 Old Comment=172648-0102 New Comment=1726480102
+Change Managed Component Library Link : Designator=BATT IN Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=EC8650E5-E950-4C72-BEF2-DC18319EF91D New ItemGUID= Old RevisionGUID=86186D29-5D7C-44C9-87F2-48C3DAE61DCB New RevisionGUID=
+Change Managed Component Library Link : Designator=e-Match 1 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=EC8650E5-E950-4C72-BEF2-DC18319EF91D New ItemGUID= Old RevisionGUID=86186D29-5D7C-44C9-87F2-48C3DAE61DCB New RevisionGUID=
+Change Managed Component Library Link : Designator=e-Match 2 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=EC8650E5-E950-4C72-BEF2-DC18319EF91D New ItemGUID= Old RevisionGUID=86186D29-5D7C-44C9-87F2-48C3DAE61DCB New RevisionGUID=
+Change component parameters: Designator = "BATT IN" ("BATT IN"); Footprint = "FP-172648-0102-MFG"; UniqueID = "\TYAEUSWV" ("\TYAEUSWV")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1726480102"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Molex Connector Corporation"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Change component parameters: Designator = "e-Match 1" ("e-Match 1"); Footprint = "FP-172648-0102-MFG"; UniqueID = "\WVCEEJJY" ("\WVCEEJJY")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1726480102"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Molex Connector Corporation"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Change component parameters: Designator = "e-Match 2" ("e-Match 2"); Footprint = "FP-172648-0102-MFG"; UniqueID = "\LVBWKEYM" ("\LVBWKEYM")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1726480102"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Molex Connector Corporation"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=D1(ONSC-SOD-123-2-425-04_V)
+Add component (AddParameter): Name = "Case/Package"; Value = "SOD-123-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "500mW"; VariantName = "[No Variations]"
+Added Component: Designator=D2(ONSC-D2PAK-3-418B-04_V)
+Add component (AddParameter): Name = "Case/Package"; Value = "D2PAK"; VariantName = "[No Variations]"
+Added Component: Designator=D3(ONSC-D2PAK-3-418B-04_V)
+Add component (AddParameter): Name = "Case/Package"; Value = "D2PAK"; VariantName = "[No Variations]"
+Added Component: Designator=Q3(FP-SOT23-IPC_C)
+Add component (AddParameter): Name = "Case/Package"; Value = "SOT-23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin,Matte"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Continuous Drain Current (ID)"; Value = "4.2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain to Source Resistance"; Value = "200mR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain to Source Voltage (Vdss)"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-source On Resistance-Max"; Value = "52MR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Element Configuration"; Value = "Single"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fall Time"; Value = "34.7ns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gate to Source Voltage (Vgs)"; Value = "8V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Capacitance"; Value = "808pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "1.4W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Channels"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "On-State Resistance"; Value = "52MR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarity"; Value = "P-CHANNEL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds On Max"; Value = "52mR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reach SVHC Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rise Time"; Value = "13.7ns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Threshold Voltage"; Value = "-900mV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Turn-Off Delay Time"; Value = "79.3ns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Turn-On Delay Time"; Value = "10.8ns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "0.000282oz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.4mm"; VariantName = "[No Variations]"
+Added Component: Designator=R7(6-0805_N)
+Add component (AddParameter): Name = "DTEMP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SimulationGenericComponent"; Value = "True"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "T_REL_LOCAL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TC1"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TC2"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TEMP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=BAT- Pin=BATT IN-2
+Added Pin To Net: NetName=BAT+ Pin=D1-1
+Added Pin To Net: NetName=BAT+ Pin=Q3-2
+Added Pin To Net: NetName=BAT- Pin=R7-1
+Added Pin To Net: NetName=NetBATT IN_1 Pin=BATT IN-1
+Added Pin To Net: NetName=NetBATT IN_1 Pin=Q3-3
+Added Net: Name=NetBATT IN_1
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=Q3-1
+Added Pin To Net: NetName=NetD1_2 Pin=R7-2
+Added Net: Name=NetD1_2
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_1 Pin=D2-3
+Added Pin To Net: NetName=NetD2_1 Pin=R5-2
+Added Pin To Net: NetName=NetD2_1 Pin=U1-1
+Added Net: Name=NetD2_1
+Added Pin To Net: NetName=NetD2_4 Pin=D2-4
+Added Pin To Net: NetName=NetD2_4 Pin=e-Match 2-1
+Added Net: Name=NetD2_4
+Added Pin To Net: NetName=NetD3_1 Pin=D3-1
+Added Pin To Net: NetName=NetD3_1 Pin=D3-3
+Added Pin To Net: NetName=NetD3_1 Pin=R6-2
+Added Pin To Net: NetName=NetD3_1 Pin=U2-1
+Added Net: Name=NetD3_1
+Added Pin To Net: NetName=NetD3_4 Pin=D3-4
+Added Pin To Net: NetName=NetD3_4 Pin=e-Match 1-1
+Added Net: Name=NetD3_4
+Added Member To Class: ClassName=DEP_REVC Member=Component BATT IN 1726480102
+Added Member To Class: ClassName=DEP_REVC Member=Component D1 SZMMSZ4679T1G
+Added Member To Class: ClassName=DEP_REVC Member=Component D2 MBRB2545CTT4G
+Added Member To Class: ClassName=DEP_REVC Member=Component D3 MBRB2545CTT4G
+Added Member To Class: ClassName=DEP_REVC Member=Component e-Match 1 1726480102
+Added Member To Class: ClassName=DEP_REVC Member=Component e-Match 2 1726480102
+Added Member To Class: ClassName=DEP_REVC Member=Component Q3 DMG2305UX-7
+Added Member To Class: ClassName=DEP_REVC Member=Component R7 Resistor
+Added Room: Name=DEP_REVC

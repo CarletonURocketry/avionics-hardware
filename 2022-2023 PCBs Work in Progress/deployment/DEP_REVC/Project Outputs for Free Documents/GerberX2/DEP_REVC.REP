@@ -1,0 +1,369 @@
+*************************************************************
+FileName = DEP_REVC.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : DEP_REVC_Copper_Signal_Top.gbr
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+*************************************************************
+
+*************************************************************
+Generating : GND
+      File : DEP_REVC_Copper_Plane_1.gbr
+
+    Adding Layer      : GND
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+*************************************************************
+
+*************************************************************
+Generating : GND
+      File : DEP_REVC_Copper_Plane_2.gbr
+
+    Adding Layer      : GND
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D26
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+*************************************************************
+
+*************************************************************
+Generating : Power
+      File : DEP_REVC_Copper_Signal_Bot.gbr
+
+    Adding Layer      : Power
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D35
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : DEP_REVC_Pads_Bot.gbr
+
+    Adding Layer      : Power
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D23
+    D24
+    D25
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : DEP_REVC_Pads_Top.gbr
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D23
+    D24
+    D25
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : DEP_REVC_Legend_Top.gbr
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D22
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : DEP_REVC_Legend_Bot.gbr
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D22
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : DEP_REVC_Soldermask_Top.gbr
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D13
+    D23
+    D24
+    D25
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : DEP_REVC_Soldermask_Bot.gbr
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Power
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D23
+    D24
+    D25
+    D50
+    D51
+    D52
+    D53
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : DEP_REVC_Paste_Top.gbr
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : DEP_REVC_Paste_Bot.gbr
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Power
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : DEP_REVC_Mechanical_1.gbr
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Assembly
+      File : DEP_REVC_Top_Assembly.gbr
+
+    Adding Layer      : Top Assembly
+
+
+Used DCodes :
+    D38
+*************************************************************
+
+*************************************************************
+Generating : Top 3D Body
+      File : DEP_REVC_Top_3D_Body.gbr
+
+    Adding Layer      : Top 3D Body
+
+
+Used DCodes :
+    D38
+    D39
+    D42
+*************************************************************
+
+*************************************************************
+Generating : Top Courtyard
+      File : DEP_REVC_Top_Courtyard.gbr
+
+    Adding Layer      : Top Courtyard
+
+
+Used DCodes :
+    D38
+    D42
+    D54
+*************************************************************
+
+*************************************************************
+Generating : Top Component Center
+      File : DEP_REVC_Top_Component_Center.gbr
+
+    Adding Layer      : Top Component Center
+
+
+Used DCodes :
+    D42
+*************************************************************
+
+*************************************************************
+Generating : Profile
+      File : DEP_REVC_Profile.gbr
+
+
+Used DCodes :
+    D55
+*************************************************************
+
+*************************************************************
+Generating : Non-plated through-hole drill file
+      File : DEP_REVC_NPTH_Drill.gbr
+
+
+Used DCodes :
+    D56
+*************************************************************
+
+*************************************************************
+Generating : Plated through-hole drill file
+      File : DEP_REVC_PTH_Drill.gbr
+
+
+Used DCodes :
+    D57
+    D58
+    D59
+    D60
+    D61
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : DEP_REVC_Drawing_1.gbr
+
+    Adding Drill Pair : Top Layer-Power
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D39
+    D63
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : DEP_REVC_Drillmap_1.gbr
+
+    Adding Drill Pair : Top Layer-Power
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D39
+*************************************************************
+

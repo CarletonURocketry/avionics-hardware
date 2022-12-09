@@ -1,0 +1,85 @@
+Added Component: Designator=D1(ONSC-D2PAK-3-418B-04_V)
+Add component (AddParameter): Name = "Case/Package"; Value = "D2PAK"; VariantName = "[No Variations]"
+Added Component: Designator=D2(ONSC-D2PAK-3-418B-04_V)
+Add component (AddParameter): Name = "Case/Package"; Value = "D2PAK"; VariantName = "[No Variations]"
+Added Component: Designator=Q3(FP-SOT23-IPC_C)
+Add component (AddParameter): Name = "Case/Package"; Value = "SOT-23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin,Matte"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Continuous Drain Current (ID)"; Value = "4.2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain to Source Resistance"; Value = "200mR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain to Source Voltage (Vdss)"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain-source On Resistance-Max"; Value = "52MR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Element Configuration"; Value = "Single"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fall Time"; Value = "34.7ns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gate to Source Voltage (Vgs)"; Value = "8V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Capacitance"; Value = "808pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "1.4W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Channels"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "On-State Resistance"; Value = "52MR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarity"; Value = "P-CHANNEL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds On Max"; Value = "52mR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reach SVHC Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rise Time"; Value = "13.7ns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Threshold Voltage"; Value = "-900mV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Turn-Off Delay Time"; Value = "79.3ns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Turn-On Delay Time"; Value = "10.8ns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "0.000282oz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.4mm"; VariantName = "[No Variations]"
+Added Component: Designator=R7(6-0805_N)
+Add component (AddParameter): Name = "DTEMP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SimulationGenericComponent"; Value = "True"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "T_REL_LOCAL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TC1"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TC2"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TEMP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin D?-1
+Added Pin To Net: NetName=BAT+ Pin=Q3-2
+Added Pin To Net: NetName=BAT+ Pin=R1-1
+Change Net Name : Old Net Name=Net2_1 New Net Name=NetK2_1
+Change Net Name : Old Net Name=Net2_4 New Net Name=NetK2_4
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=D1-3
+Added Pin To Net: NetName=NetD1_1 Pin=R5-2
+Added Pin To Net: NetName=NetD1_1 Pin=U1-1
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetD1_4 Pin=D1-4
+Added Net: Name=NetD1_4
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_1 Pin=D2-3
+Added Pin To Net: NetName=NetD2_1 Pin=R6-2
+Added Pin To Net: NetName=NetD2_1 Pin=U2-1
+Added Net: Name=NetD2_1
+Added Pin To Net: NetName=NetD2_4 Pin=D2-4
+Added Net: Name=NetD2_4
+Added Pin To Net: NetName=NetD?_2 Pin=Q3-1
+Added Pin To Net: NetName=NetD?_2 Pin=R7-2
+Added Net: Name=NetD?_2
+Added Pin To Net: NetName=NetJ1_2 Pin=K1-3
+Added Pin To Net: NetName=NetJ1_2 Pin=K2-3
+Added Pin To Net: NetName=NetJ1_2 Pin=R7-1
+Added Net: Name=NetJ1_2
+Added Pin To Net: NetName=NetJ2_1 Pin=Q3-3
+Added Net: Name=NetJ2_1
+Added Member To Class: ClassName=DEP_REVC Member=Component D1 MBRB2545CTT4G
+Added Member To Class: ClassName=DEP_REVC Member=Component D2 MBRB2545CTT4G
+Add Class Member: Failed to add class member : Component J1 1726480102
+Add Class Member: Failed to add class member : Component J2 1726480102
+Add Class Member: Failed to add class member : Component J3 1726480102
+Added Member To Class: ClassName=DEP_REVC Member=Component K2 AQY282EH
+Added Member To Class: ClassName=DEP_REVC Member=Component Q3 DMG2305UX-7
+Added Member To Class: ClassName=DEP_REVC Member=Component R7 Resistor
+Added Room: Name=DEP_REVC
