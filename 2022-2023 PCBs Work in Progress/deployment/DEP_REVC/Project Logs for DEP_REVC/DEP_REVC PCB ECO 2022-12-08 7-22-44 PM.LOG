@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=NetD2_1 Pin=U1-1
+Removed Pin From Net: NetName=NetQ1_5 Pin=U1-3
+Removed Pin From Net: NetName=NetD3_1 Pin=U2-1
+Removed Pin From Net: NetName=NetQ2_5 Pin=U2-3
+Removed Member From Class: ClassName=DEP_REVC Member=U1
+Removed Member From Class: ClassName=DEP_REVC Member=U2
+Change Component Comment : Designator=K2 Old Comment=AQY282EH New Comment=AQY280SX
+Added Pin To Net: NetName=NetQ1_5 Pin=R5-1
+Added Pin To Net: NetName=NetQ2_5 Pin=R6-1
