@@ -1,0 +1,5 @@
+DRC Rules Export File for PCB: C:\Users\darwi\Documents\GitHub\avionics-hardware\2022-2023 PCBs Work in Progress\power\PWR_REVE\PWR_REVE.PcbDoc
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=5.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
