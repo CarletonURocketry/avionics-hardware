@@ -1,0 +1,111 @@
+Change Component Comment : Designator=ALT 1 SW Old Comment=Comment New Comment=1984769
+Change Component Comment : Designator=Apogee 1 Old Comment=Comment New Comment=1984769
+Change Component Comment : Designator=Apogee 2 Old Comment=Comment New Comment=1984769
+Change Component Comment : Designator=Main 1 Old Comment=Comment New Comment=1984769
+Change Component Comment : Designator=Main 2 Old Comment=Comment New Comment=1984769
+Change Component Comment : Designator=GPS BAT In Old Comment=Comment New Comment=B2B-PH-K-S(LF)(SN)
+Change Component Comment : Designator=GPS BAT Out Old Comment=Comment New Comment=B2B-PH-K-S(LF)(SN)
+Change Component Comment : Designator=ALT 1 SW Old Comment=Comment New Comment=CMP-04776-000216-1
+Change Component Comment : Designator=ALT 2 SW Old Comment=Comment New Comment=CMP-04776-000216-1
+Change Component Comment : Designator=DEP Apogee Old Comment=Comment New Comment=CMP-04776-000216-1
+Change Component Comment : Designator=DEP Main Old Comment=Comment New Comment=CMP-04776-000216-1
+Change Component Comment : Designator=GPS SW Old Comment=Comment New Comment=CMP-04776-000216-1
+Change Component Designator: OldDesignator=ALT 1 SW NewDesignator=ALT SW 1
+Change Component Designator: OldDesignator=ALT 2 SW NewDesignator=ALT SW 2
+Change Managed Component Library Link : Designator=ALT SW 1 Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=DA11A450-407B-4A0E-A3C9-A6AD5400648D Old RevisionGUID= New RevisionGUID=7BB320C8-6920-4832-B962-B87D9753E3C0
+Change Managed Component Library Link : Designator=ALT 1 SW Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=11805ab4-cc39-4837-bdcb-5ef2ba1cfc6e Old RevisionGUID= New RevisionGUID=b50f4a99-284a-45d6-86b3-98320de6fe9b
+Change Managed Component Library Link : Designator=ALT SW 2 Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=DA11A450-407B-4A0E-A3C9-A6AD5400648D Old RevisionGUID= New RevisionGUID=7BB320C8-6920-4832-B962-B87D9753E3C0
+Change Managed Component Library Link : Designator=Apogee 1 Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=11805ab4-cc39-4837-bdcb-5ef2ba1cfc6e Old RevisionGUID= New RevisionGUID=b50f4a99-284a-45d6-86b3-98320de6fe9b
+Change Managed Component Library Link : Designator=Apogee 2 Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=11805ab4-cc39-4837-bdcb-5ef2ba1cfc6e Old RevisionGUID= New RevisionGUID=b50f4a99-284a-45d6-86b3-98320de6fe9b
+Change Managed Component Library Link : Designator=DEP Apogee Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=DA11A450-407B-4A0E-A3C9-A6AD5400648D Old RevisionGUID= New RevisionGUID=7BB320C8-6920-4832-B962-B87D9753E3C0
+Change Managed Component Library Link : Designator=DEP Main Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=DA11A450-407B-4A0E-A3C9-A6AD5400648D Old RevisionGUID= New RevisionGUID=7BB320C8-6920-4832-B962-B87D9753E3C0
+Change Managed Component Library Link : Designator=GPS SW Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=DA11A450-407B-4A0E-A3C9-A6AD5400648D Old RevisionGUID= New RevisionGUID=7BB320C8-6920-4832-B962-B87D9753E3C0
+Change Managed Component Library Link : Designator=Main 1 Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=11805ab4-cc39-4837-bdcb-5ef2ba1cfc6e Old RevisionGUID= New RevisionGUID=b50f4a99-284a-45d6-86b3-98320de6fe9b
+Change Managed Component Library Link : Designator=Main 2 Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=11805ab4-cc39-4837-bdcb-5ef2ba1cfc6e Old RevisionGUID= New RevisionGUID=b50f4a99-284a-45d6-86b3-98320de6fe9b
+Change component parameters: Designator = "ALT 1 SW" ("ALT SW 1"); Footprint = "FP-172648-0102-MFG"; UniqueID = "\XIFTZAWF" ("\XIFTZAWF")
+Change component parameters (AddParameter): Name = "Component Type"; Value = "Standard"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Design Item ID"; Value = "CMP-04776-000216-1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "172648-0102"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Source"; Value = "CON_REVD.SCHLIB"; VariantName = "[No Variations]"
+Change component parameters: Designator = "ALT 2 SW" ("ALT SW 2"); Footprint = "FP-172648-0102-MFG"; UniqueID = "\XCCACLYJ" ("\XCCACLYJ")
+Change component parameters (AddParameter): Name = "Component Type"; Value = "Standard"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Design Item ID"; Value = "CMP-04776-000216-1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "172648-0102"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Source"; Value = "CON_REVD.SCHLIB"; VariantName = "[No Variations]"
+Change component parameters: Designator = "DEP Apogee" ("DEP Apogee"); Footprint = "FP-172648-0102-MFG"; UniqueID = "\URXYPWRM" ("\URXYPWRM")
+Change component parameters (AddParameter): Name = "Component Type"; Value = "Standard"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Design Item ID"; Value = "CMP-04776-000216-1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "172648-0102"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Source"; Value = "CON_REVD.SCHLIB"; VariantName = "[No Variations]"
+Change component parameters: Designator = "DEP Main" ("DEP Main"); Footprint = "FP-172648-0102-MFG"; UniqueID = "\QVCOJFJS" ("\QVCOJFJS")
+Change component parameters (AddParameter): Name = "Component Type"; Value = "Standard"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Design Item ID"; Value = "CMP-04776-000216-1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "172648-0102"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Source"; Value = "CON_REVD.SCHLIB"; VariantName = "[No Variations]"
+Change component parameters: Designator = "GPS BAT In" ("GPS BAT In"); Footprint = "JST_B2B-PH-K-S(LF)(SN)"; UniqueID = "\SMBAWGSF" ("\SMBAWGSF")
+Change component parameters (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "{'manufacturer': u'JST Sales'}"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "B2B-PH-K-S(LF)(SN)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "GPS BAT Out" ("GPS BAT Out"); Footprint = "JST_B2B-PH-K-S(LF)(SN)"; UniqueID = "\KWONLBTV" ("\KWONLBTV")
+Change component parameters (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "{'manufacturer': u'JST Sales'}"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "B2B-PH-K-S(LF)(SN)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "GPS SW" ("GPS SW"); Footprint = "FP-172648-0102-MFG"; UniqueID = "\QWBZVDNH" ("\QWBZVDNH")
+Change component parameters (AddParameter): Name = "Component Type"; Value = "Standard"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Design Item ID"; Value = "CMP-04776-000216-1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "172648-0102"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Source"; Value = "CON_REVD.SCHLIB"; VariantName = "[No Variations]"
+Added Component: Designator=ALT 2 SW(1984769-Footprint-1)
+Added Pin To Net: NetName=NetALT 1 SW_1 Pin=ALT 1 SW-1
+Added Pin To Net: NetName=NetALT 1 SW_1 Pin=ALT SW 1-1
+Added Net: Name=NetALT 1 SW_1
+Added Pin To Net: NetName=NetALT 1 SW_2 Pin=ALT 1 SW-2
+Added Pin To Net: NetName=NetALT 1 SW_2 Pin=ALT SW 1-2
+Added Net: Name=NetALT 1 SW_2
+Added Pin To Net: NetName=NetALT 2 SW_1 Pin=ALT 2 SW-1
+Added Pin To Net: NetName=NetALT 2 SW_1 Pin=ALT SW 2-1
+Added Net: Name=NetALT 2 SW_1
+Added Pin To Net: NetName=NetALT 2 SW_2 Pin=ALT 2 SW-2
+Added Pin To Net: NetName=NetALT 2 SW_2 Pin=ALT SW 2-2
+Added Net: Name=NetALT 2 SW_2
+Added Pin To Net: NetName=NetApogee 1_1 Pin=Apogee 1-1
+Added Pin To Net: NetName=NetApogee 1_1 Pin=Apogee 2-1
+Added Pin To Net: NetName=NetApogee 1_1 Pin=DEP Apogee-1
+Added Net: Name=NetApogee 1_1
+Added Pin To Net: NetName=NetApogee 1_2 Pin=Apogee 1-2
+Added Pin To Net: NetName=NetApogee 1_2 Pin=Apogee 2-2
+Added Pin To Net: NetName=NetApogee 1_2 Pin=DEP Apogee-2
+Added Net: Name=NetApogee 1_2
+Added Pin To Net: NetName=NetDEP Main_1 Pin=DEP Main-1
+Added Pin To Net: NetName=NetDEP Main_1 Pin=Main 1-1
+Added Pin To Net: NetName=NetDEP Main_1 Pin=Main 2-1
+Added Net: Name=NetDEP Main_1
+Added Pin To Net: NetName=NetDEP Main_2 Pin=DEP Main-2
+Added Pin To Net: NetName=NetDEP Main_2 Pin=Main 1-2
+Added Pin To Net: NetName=NetDEP Main_2 Pin=Main 2-2
+Added Net: Name=NetDEP Main_2
+Added Pin To Net: NetName=NetGPS BAT In_1 Pin=GPS BAT In-1
+Added Pin To Net: NetName=NetGPS BAT In_1 Pin=GPS SW-1
+Added Net: Name=NetGPS BAT In_1
+Added Pin To Net: NetName=NetGPS BAT In_2 Pin=GPS BAT In-2
+Added Pin To Net: NetName=NetGPS BAT In_2 Pin=GPS BAT Out-2
+Added Net: Name=NetGPS BAT In_2
+Added Pin To Net: NetName=NetGPS BAT Out_1 Pin=GPS BAT Out-1
+Added Pin To Net: NetName=NetGPS BAT Out_1 Pin=GPS SW-2
+Added Net: Name=NetGPS BAT Out_1

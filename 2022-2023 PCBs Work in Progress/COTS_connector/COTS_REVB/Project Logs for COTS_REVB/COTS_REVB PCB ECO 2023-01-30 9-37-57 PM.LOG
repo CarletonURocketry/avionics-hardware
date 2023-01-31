@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=NetDEP Main_1 Pin=Main 1-1
+Removed Pin From Net: NetName=NetDEP Main_2 Pin=Main 1-2
+Added Pin To Net: NetName=NetDEP Main_2 Pin=Main 1-1
+Added Pin To Net: NetName=NetDEP Main_1 Pin=Main 1-2
