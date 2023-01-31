@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=Designator79 Old Footprint=LiPo Holder-Footprint-1 New Footprint=LiPo Holder-Footprint-1
+Change Component Comment : Designator=1200 mAh Lipo x2 Holder Old Comment=  New Comment=
+Change Component Comment : Designator=Designator79 Old Comment=Comment New Comment=1200mAh LiPo x1 Holder
+Change Component Designator: OldDesignator=Designator79 NewDesignator=1200 mAh LiPo x1 Holder
+Change Managed Component Library Link : Designator=1200 mAh LiPo x1 Holder Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=269eea31-bda1-4e35-8ecc-cb8738076e34 Old RevisionGUID= New RevisionGUID=5181528b-3112-40c6-970f-a0b65f6b6b56
