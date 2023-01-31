@@ -1,0 +1,30 @@
+Removed Pin From Net: NetName=NetApogee 1_2 Pin=Apogee 2-1
+Removed Pin From Net: NetName=NetD1_4 Pin=D2-4
+Removed Pin From Net: NetName=NetD1_1 Pin=D3-1
+Removed Pin From Net: NetName=NetD1_1 Pin=D3-3
+Removed Pin From Net: NetName=NetD1_4 Pin=D3-4
+Removed Pin From Net: NetName=NetApogee 1_2 Pin=DEP Apogee-1
+Change Component Footprint: Designator=D1 Old Footprint=ONSC-D2PAK-3-418B-04_V New Footprint=ONSC-D2PAK-3-418B-04_V
+Change Component Comment : Designator=D1 Old Comment=Diode Apogee 1 New Comment=MBRB2545CTT4G
+Change Component Comment : Designator=D4 Old Comment=Diode Main 2 New Comment=MBRB2545CTT4G
+Change Managed Component Library Link : Designator=D1 Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=df760070-fff6-41cc-ab34-e26ceae485a6 Old RevisionGUID= New RevisionGUID=0f18d537-90b5-4f9d-9309-da7cc4269507
+Change component parameters: Designator = "D1" ("D1"); Footprint = "ONSC-D2PAK-3-418B-04_V"; UniqueID = "\OWUVDZXP" ("\OWUVDZXP")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "D2PAK"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=D1-3
+Added Pin To Net: NetName=NetD1_4 Pin=D1-4
+Added Pin To Net: NetName=NetApogee 1_2 Pin=D2-1
+Added Pin To Net: NetName=NetApogee 1_2 Pin=D2-3
+Added Pin To Net: NetName=NetD1_4 Pin=D4-4
+Added Pin To Net: NetName=NetApogee 2_1 Pin=Apogee 2-1
+Added Pin To Net: NetName=NetApogee 2_1 Pin=D3-1
+Added Pin To Net: NetName=NetApogee 2_1 Pin=D3-3
+Added Net: Name=NetApogee 2_1
+Added Pin To Net: NetName=NetD2_4 Pin=D2-4
+Added Pin To Net: NetName=NetD2_4 Pin=D3-4
+Added Pin To Net: NetName=NetD2_4 Pin=DEP Apogee-1
+Added Net: Name=NetD2_4
+Added Pin To Net: NetName=NetD4_1 Pin=D4-1
+Added Pin To Net: NetName=NetD4_1 Pin=D4-3
+Added Pin To Net: NetName=NetD4_1 Pin=Main 2-2
+Added Net: Name=NetD4_1
