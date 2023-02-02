@@ -1,0 +1,7 @@
+Change Component Comment : Designator=GPS BAT Out Old Comment=Comment New Comment=1984769
+Change Component Comment : Designator=Featherweight Old Comment=Comment New Comment=Featherweight
+Change Component Designator: OldDesignator=Featherweight NewDesignator=Featherweight GPS Tracker
+Change Managed Component Library Link : Designator=Featherweight GPS Tracker Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=3f0fb2d7-5830-4f04-bf97-e947b6510547 Old RevisionGUID= New RevisionGUID=ea7738e2-0ac4-4d79-be66-b897a5f42ff0
+Change Managed Component Library Link : Designator=GPS BAT Out Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=11805ab4-cc39-4837-bdcb-5ef2ba1cfc6e Old RevisionGUID= New RevisionGUID=b50f4a99-284a-45d6-86b3-98320de6fe9b
+Added Pin To Net: NetName=NetGPS BAT In_1 Pin=GPS BAT Out-1
+Added Pin To Net: NetName=NetGPS BAT In_2 Pin=GPS BAT Out-2

@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=NetGPS BAT In_1 Pin=GPS BAT Out-1
+Removed Pin From Net: NetName=NetALT 2 SW_1 Pin=J2-3
+Removed Pin From Net: NetName=NetALT 2 SW_2 Pin=J2-4
+Removed Pin From Net: NetName=NetGPS BAT In_2 Pin=J2-5
+Removed Pin From Net: NetName=NetGPS BAT In_1 Pin=J2-6
+Added Pin To Net: NetName=NetGPS BAT In_2 Pin=J2-3
+Added Pin To Net: NetName=NetGPS BAT In_1 Pin=J2-4
+Added Pin To Net: NetName=NetALT 2 SW_2 Pin=J2-5
+Added Pin To Net: NetName=NetALT 2 SW_1 Pin=J2-6
