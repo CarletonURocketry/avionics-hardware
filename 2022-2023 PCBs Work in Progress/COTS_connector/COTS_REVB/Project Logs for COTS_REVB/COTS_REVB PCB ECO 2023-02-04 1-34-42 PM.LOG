@@ -1,0 +1,22 @@
+Change Component Comment : Designator=Apogee 1 Old Comment=1984769 New Comment=Terminal Block
+Change Component Comment : Designator=Apogee 2 Old Comment=1984769 New Comment=Terminal Block
+Change Component Comment : Designator=J3 Old Comment=1984785 New Comment=
+Change Component Comment : Designator=J1 Old Comment=1984785 New Comment=Terminal Block
+Change Component Description : Designator=J3 Old Description=Terminal Block, Printed Circuit, 10 A, 160 V, 3.5 mm, 4, 3.5 mm, 1.2 mm, M2, PA New Description=
+Change Net Name : Old Net Name=NetApogee 1_1 New Net Name=Apogee -
+Change Net Name : Old Net Name=NetD1_1 New Net Name=Main 1 +
+Change Net Name : Old Net Name=NetD1_4 New Net Name=Main +
+Change Net Name : Old Net Name=NetD2_4 New Net Name=Apogee +
+Change Net Name : Old Net Name=NetGPS BAT In_2 New Net Name=GPS BAT -
+Change Net Name : Old Net Name=NetJ1_2 New Net Name=Main -
+Added Pin To Net: NetName=ALT 1 SW + Pin=J1-3
+Added Pin To Net: NetName=ALT 1 SW + Pin=J2-2
+Added Net: Name=ALT 1 SW +
+Added Pin To Net: NetName=ALT 1 SW - Pin=J1-4
+Added Pin To Net: NetName=ALT 1 SW - Pin=J2-1
+Added Net: Name=ALT 1 SW -
+Added Pin To Net: NetName=GPS BAT SW 1 Pin=J2-3
+Added Net: Name=GPS BAT SW 1
+Added Pin To Net: NetName=GPS BAT SW 2 Pin=GPS BAT Out-1
+Added Pin To Net: NetName=GPS BAT SW 2 Pin=J2-4
+Added Net: Name=GPS BAT SW 2

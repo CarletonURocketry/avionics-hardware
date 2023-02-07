@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=Terminal Block Old Footprint=CONN_1984785_PXC New Footprint=CONN_1984785_PXC
+Change Component Footprint: Designator=Deploy Minifit Connector Old Footprint=CONN_1984785_PXC New Footprint=10126480104-Footprint-1
+Change Component Footprint: Designator=Featherweight GPS Tracker Old Footprint=Featherweight-Footprint-1 New Footprint=Featherweight-Footprint-1
