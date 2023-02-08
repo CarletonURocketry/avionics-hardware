@@ -1,0 +1,13 @@
+Change Component Designator: OldDesignator=Apogee 1 NewDesignator=Apogee Deploy Line 1
+Change Component Designator: OldDesignator=Apogee 2 NewDesignator=Apogee Deploy Line  2
+Change Component Designator: OldDesignator=J1 NewDesignator=Combined Switch and Main
+Change Component Designator: OldDesignator=J2 NewDesignator=Switch Minifit Connector
+Change Component Designator: OldDesignator=J3 NewDesignator=Deploy Minifit Connector
+Change Component Designator: OldDesignator=Main 2 NewDesignator=Main Deploy Line 2
+Change Net Name : Old Net Name=NetALT 2 SW_1 New Net Name=ALT 2 SW 2
+Change Net Name : Old Net Name=NetALT 2 SW_2 New Net Name=ALT 2 SW 1
+Change Net Name : Old Net Name=NetApogee 1_2 New Net Name=Apogee 1 +
+Change Net Name : Old Net Name=NetD4_1 New Net Name=Main 2 +
+Added Pin To Net: NetName=Apogee 2 + Pin=D3-1
+Added Pin To Net: NetName=Apogee 2 + Pin=D3-3
+Added Net: Name=Apogee 2 +
