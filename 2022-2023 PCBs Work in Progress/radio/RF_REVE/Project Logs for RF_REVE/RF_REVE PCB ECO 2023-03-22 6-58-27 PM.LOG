@@ -1,0 +1,57 @@
+Removed Pin From Net: NetName=UARTCTS Pin=J1-12
+Removed Pin From Net: NetName=PGC_INT Pin=J1-14
+Removed Pin From Net: NetName=PGD_INT Pin=J1-15
+Removed Pin From Net: NetName=GND Pin=J1-16
+Removed Pin From Net: NetName=NetJ1_11 Pin=U1-9
+Removed Pin From Net: NetName=NetJ1_10 Pin=U1-10
+Change Component Footprint: Designator=J1 Old Footprint=FP-B16B-XH-A_LF_SN-MFG New Footprint=SAMTEC_PHT-117-X-X-S-007
+Change Component Comment : Designator=J1 Old Comment=B16B-XH-A(LF)(SN) New Comment=PHT-117-X-X-S-007
+Change Managed Component Library Link : Designator=J1 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID=3486B2E4-D6BB-4B35-853B-86A824F51484 New ItemGUID=54DF155A-AD63-4842-B2AE-04BFDF181C4A Old RevisionGUID=4E8CC6FC-6B90-4659-8E33-272E6CF8BFF6 New RevisionGUID=54F08194-DB96-4CCB-B704-01DCEF55159D
+Change component parameters: Designator = "J1" ("J1"); Footprint = "FP-B16B-XH-A_LF_SN-MFG"; UniqueID = "\CNBGZHPY" ("\CNBGZHPY")
+Change component parameters (AddParameter): Name = "Availability"; Value = "Bad"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/PHT-117-01-L-S-007/Samtec/view-part/3482443/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Component Type"; Value = "Standard"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Design Item ID"; Value = "PHT-117-X-X-S-007"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Samtec"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "PHT-117-01-L-S-007"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pin Count"; Value = "16"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/PHT-117-01-L-S-007/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/PHT-117-01-L-S-007/Samtec/view-part/3482443/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Source"; Value = "PHT-117-X-X-S-007.SchLib"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=UARTCTS Pin=J1-14
+Added Pin To Net: NetName=PGC_INT Pin=J1-15
+Added Pin To Net: NetName=PGD_INT Pin=J1-16
+Added Pin To Net: NetName=GND Pin=J1-17
+Added Pin To Net: NetName=NetJ1_11 Pin=U1-10
+Added Pin To Net: NetName=NetJ1_10 Pin=U1-13
+Change Net Name : Old Net Name=+5V New Net Name=5V
+Added Pin To Net: NetName=NetJ1_01 Pin=J1-01
+Added Pin To Net: NetName=NetJ1_01 Pin=U1-38
+Added Net: Name=NetJ1_01
+Added Pin To Net: NetName=NetJ1_02 Pin=J1-02
+Added Pin To Net: NetName=NetJ1_02 Pin=U1-39
+Added Net: Name=NetJ1_02
+Added Pin To Net: NetName=NetJ1_03 Pin=J1-03
+Added Pin To Net: NetName=NetJ1_03 Pin=U1-40
+Added Net: Name=NetJ1_03
+Added Pin To Net: NetName=NetJ1_04 Pin=J1-04
+Added Pin To Net: NetName=NetJ1_04 Pin=U1-43
+Added Net: Name=NetJ1_04
+Added Pin To Net: NetName=NetJ1_05 Pin=J1-05
+Added Pin To Net: NetName=NetJ1_05 Pin=U1-44
+Added Net: Name=NetJ1_05
+Added Pin To Net: NetName=NetJ1_06 Pin=J1-06
+Added Pin To Net: NetName=NetJ1_06 Pin=U1-45
+Added Net: Name=NetJ1_06
+Added Pin To Net: NetName=NetJ1_08 Pin=J1-08
+Added Pin To Net: NetName=NetJ1_08 Pin=U1-46
+Added Net: Name=NetJ1_08
+Added Pin To Net: NetName=NetJ1_09 Pin=J1-09
+Added Pin To Net: NetName=NetJ1_09 Pin=U1-14
+Added Net: Name=NetJ1_09
+Added Pin To Net: NetName=NetJ1_12 Pin=J1-12
+Added Pin To Net: NetName=NetJ1_12 Pin=U1-9
+Added Net: Name=NetJ1_12

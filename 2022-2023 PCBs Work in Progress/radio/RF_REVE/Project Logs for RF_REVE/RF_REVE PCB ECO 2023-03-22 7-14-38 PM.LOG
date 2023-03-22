@@ -1,0 +1,54 @@
+Removed Pin From Net: NetName=UARTRTS Pin=J1-13
+Removed Pin From Net: NetName=UARTCTS Pin=J1-14
+Removed Pin From Net: NetName=PGC_INT Pin=J1-15
+Removed Pin From Net: NetName=PGD_INT Pin=J1-16
+Removed Pin From Net: NetName=GND Pin=J1-17
+Removed Member From Class: ClassName=RF_REVE[1] Member=J1
+Added Component: Designator=J?(CONN_68602-116HLF_AMP)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2023 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "68602-116HLF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_1"; Value = "609-3364-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "68602-116HLF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Amphenol ICC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "68602-116HLF.SchLib"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=UARTRTS Pin=J?-12
+Added Pin To Net: NetName=UARTCTS Pin=J?-13
+Added Pin To Net: NetName=PGC_INT Pin=J?-14
+Added Pin To Net: NetName=PGD_INT Pin=J?-15
+Added Pin To Net: NetName=GND Pin=J?-16
+Added Pin To Net: NetName=NetJ?_1 Pin=J?-1
+Added Pin To Net: NetName=NetJ?_1 Pin=U1-38
+Added Net: Name=NetJ?_1
+Added Pin To Net: NetName=NetJ?_2 Pin=J?-2
+Added Pin To Net: NetName=NetJ?_2 Pin=U1-39
+Added Net: Name=NetJ?_2
+Added Pin To Net: NetName=NetJ?_3 Pin=J?-3
+Added Pin To Net: NetName=NetJ?_3 Pin=U1-40
+Added Net: Name=NetJ?_3
+Added Pin To Net: NetName=NetJ?_4 Pin=J?-4
+Added Pin To Net: NetName=NetJ?_4 Pin=U1-43
+Added Net: Name=NetJ?_4
+Added Pin To Net: NetName=NetJ?_5 Pin=J?-5
+Added Pin To Net: NetName=NetJ?_5 Pin=U1-44
+Added Net: Name=NetJ?_5
+Added Pin To Net: NetName=NetJ?_6 Pin=J?-6
+Added Pin To Net: NetName=NetJ?_6 Pin=U1-45
+Added Net: Name=NetJ?_6
+Added Pin To Net: NetName=NetJ?_7 Pin=J?-7
+Added Pin To Net: NetName=NetJ?_7 Pin=U1-46
+Added Net: Name=NetJ?_7
+Added Pin To Net: NetName=NetJ?_8 Pin=J?-8
+Added Pin To Net: NetName=NetJ?_8 Pin=U1-14
+Added Net: Name=NetJ?_8
+Added Pin To Net: NetName=NetJ?_9 Pin=J?-9
+Added Pin To Net: NetName=NetJ?_9 Pin=U1-13
+Added Net: Name=NetJ?_9
+Added Pin To Net: NetName=NetJ?_10 Pin=J?-10
+Added Pin To Net: NetName=NetJ?_10 Pin=U1-10
+Added Net: Name=NetJ?_10
+Added Pin To Net: NetName=NetJ?_11 Pin=J?-11
+Added Pin To Net: NetName=NetJ?_11 Pin=U1-9
+Added Net: Name=NetJ?_11
+Added Member To Class: ClassName=RF_REVE[1] Member=Component J? 68602-116HLF
