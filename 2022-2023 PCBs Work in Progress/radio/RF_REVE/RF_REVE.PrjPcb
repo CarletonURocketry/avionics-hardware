@@ -136,6 +136,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=APXPAJKK
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for RF_REVE\Design Rule Check - RF_REVE.html
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
@@ -494,8 +498,8 @@ OutputName8=Report Single Pin Nets
 OutputDocumentPath8=
 OutputVariantName8=[No Variations]
 OutputDefault8=0
-OutputType9=Export Project History
-OutputName9=Export Project History
+OutputType9=Project History
+OutputName9=Project History
 OutputDocumentPath9=
 OutputVariantName9=[No Variations]
 OutputDefault9=0
