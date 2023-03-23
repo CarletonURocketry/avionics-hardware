@@ -1,0 +1,31 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 9:08:35 PM On 2022-11-29
+
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : Variant [[No Variations]] of PCB Document [TEST_REVA.PcbDoc]
+   Generated File[TEST_REVA_Copper_Signal_Top.gbr]
+   Generated File[TEST_REVA_Copper_Plane_1.gbr]
+   Generated File[TEST_REVA_Copper_Plane_2.gbr]
+   Generated File[TEST_REVA_Copper_Signal_Bot.gbr]
+   Generated File[TEST_REVA_Pads_Bot.gbr]
+   Generated File[TEST_REVA_Pads_Top.gbr]
+   Generated File[TEST_REVA_Legend_Top.gbr]
+   Generated File[TEST_REVA_Legend_Bot.gbr]
+   Generated File[TEST_REVA_Soldermask_Top.gbr]
+   Generated File[TEST_REVA_Soldermask_Bot.gbr]
+   Generated File[TEST_REVA_Paste_Top.gbr]
+   Generated File[TEST_REVA_Paste_Bot.gbr]
+   Generated File[TEST_REVA_Profile.gbr]
+   Generated File[TEST_REVA_PTH_Drill.gbr]
+   Generated File[TEST_REVA_Drawing_1.gbr]
+   Generated File[TEST_REVA_Drillmap_1.gbr]
+   Generated File[TEST_REVA.EXTREP]
+   Generated File[TEST_REVA.REP]
+
+
+Files Generated   : 18
+Documents Printed : 0
+
+Finished Output Generation At 9:08:38 PM On 2022-11-29

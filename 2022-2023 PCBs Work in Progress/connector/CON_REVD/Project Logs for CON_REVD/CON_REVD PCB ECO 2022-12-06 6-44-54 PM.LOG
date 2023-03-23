@@ -1,0 +1,23 @@
+Added Component: Designator=B?(1049P_KEY)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_1"; Value = "36-1049P-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1049P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=J1(FP-172648-0102-MFG)
+Added Component: Designator=J?(FP-172648-0102-MFG)
+Added Component: Designator=J?(FP-172648-0102-MFG)
+Added Pin To Net: NetName=Bat+ Pin=J1-1
+Added Pin To Net: NetName=Bat+ Pin=J?-2
+Added Pin To Net: NetName=Bat+ Pin=J?-2
+Added Net: Name=Bat+
+Added Pin To Net: NetName=Bat- Pin=B?-2
+Added Pin To Net: NetName=Bat- Pin=B?-3
+Added Pin To Net: NetName=Bat- Pin=J?-1
+Added Pin To Net: NetName=Bat- Pin=J?-1
+Added Net: Name=Bat-
+Added Pin To Net: NetName=NetB?_1 Pin=B?-1
+Added Pin To Net: NetName=NetB?_1 Pin=B?-4
+Added Pin To Net: NetName=NetB?_1 Pin=J1-2
+Added Net: Name=NetB?_1
