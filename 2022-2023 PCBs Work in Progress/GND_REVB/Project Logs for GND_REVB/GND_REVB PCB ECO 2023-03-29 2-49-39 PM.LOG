@@ -1,0 +1,18 @@
+Change Net Name : Old Net Name=5V New Net Name=V_BUS
+Change Net Name : Old Net Name=D+ New Net Name=USB_D_P
+Change Net Name : Old Net Name=D- New Net Name=USB_D_N
+Change Net Name : Old Net Name=NetJ1_1 New Net Name=GPIO_2
+Change Net Name : Old Net Name=NetJ1_2 New Net Name=GPIO_3
+Change Net Name : Old Net Name=NetJ4_1 New Net Name=RFL
+Change Net Name : Old Net Name=NetMD1_2 New Net Name=RADIO_RTS
+Change Net Name : Old Net Name=NetMD1_3 New Net Name=RADIO_CTS
+Change Net Name : Old Net Name=NetMD1_6 New Net Name=RADIO_TX
+Change Net Name : Old Net Name=NetMD1_7 New Net Name=RADIO_RX
+Change Net Name : Old Net Name=NetMD1_30 New Net Name=PGC_INT
+Change Net Name : Old Net Name=NetMD1_31 New Net Name=PGD_INT
+Change Net Name : Old Net Name=NetMD1_32 New Net Name=RESET
+Change Net Name : Old Net Name=NetMD1_43 New Net Name=GPIO 6
+Change Net Name : Old Net Name=NetMD1_44 New Net Name=GPIO 7
+Change Net Name : Old Net Name=NetMD1_45 New Net Name=GPIO 8
+Change Net Name : Old Net Name=NetMD1_46 New Net Name=GPIO 9
+Added Differential Pair: Name=USB_D
