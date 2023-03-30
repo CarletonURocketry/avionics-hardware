@@ -1,0 +1,658 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2023-03-29</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">6:46:36 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc" class="file"><acronym title="C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc">C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">106</td></tr>
+</table>
+</td>
+</table><a name="IDRDKMXEEW1F1GIETG1XZ0BNTAGBFB1ZOPZJTVS2OWGF34YPG0LDPK"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDJNOIUPH1HUHBLMN1YNTQ3ZZEFL2PEAERX3MAYJQOKC55QQVNODC">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYWOXLFQWQMZCGON41DY30FUCOMUU3ILUJVMD53DI3APN1Q4UJTNB">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDT5JU3VFCIDYIC4TY1N4ET3PAGJHEXRHARR03LMPW0RFI0AQDGWMG">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">5</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFNYEQH1AUWIMN5M3S5XNB4JF3IUJEF1MIQHQXFGEMWXRMBQC5UAM">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1LCWJMHGRCPJCKJG5QVDNUGWRMDDVMC1DVWRJ3L45BF0WPEB24HN">Width Constraint (Min=0.127mm) (Max=2.5mm) (Preferred=0.293mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWROECWWI3I0YE1GJP2VNQFGSODB2SBJ4F2CCA0NIFDJ4MTVVC2CC">Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDR55MTHAQE45RHL5KPVS2Z2XOZV0SIB0WE42RVDQSUK42W0HHC5J">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2QNTCNAEY23ULP0BGSC5GL13GGFD4ESWDKEEJUOLCS4SCKY0UOJP">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGNHISFNVGZT4G0L21AQBXSILKBNHLJDRG4THZ0J1E0IRVDYVN4EI">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">90</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFWZB03UT0LBNOJA2E4ZBV5XKTCL4ZD1ESXXJZWHNRPZ11AOYPGBL">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">8</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBMOX3CVZXLM2GA0F5VP3GHY0UKWV31XLYRCVSHOA1L310WEFW4M">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEPBW4UNCNUEFNEDYNABQGULO3NXNZTNHMMUNSLKRPLXALOI3GEHO">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPCMWI5LIRYE1DOCX4T0IW3QSZNT4ZBI0JGW203OWWS1LZJ5DU4RL">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">106</td>
+</tr>
+</table><br><a name="IDT5JU3VFCIDYIC4TY1N4ET3PAGJHEXRHARR03LMPW0RFI0AQDGWMG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2165.097mil|Location2.X=3574.706mil|Location1.Y=2038.01mil|Location2.Y=3680.887mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2165.097mil|Location2.X=3574.706mil|Location1.Y=2038.01mil|Location2.Y=3680.887mil|Absolute=True">Un-Routed Net Constraint: Split Plane  (No Net) on GND_2 Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2140mil|Location2.X=2150mil|Location1.Y=2012.913mil|Location2.Y=3705.984mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2140mil|Location2.X=2150mil|Location1.Y=2012.913mil|Location2.Y=3705.984mil|Absolute=True">Un-Routed Net Constraint: Track (0mm,0mm)(0mm,42.75mm) on Multi-Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2140mil|Location2.X=3599.803mil|Location1.Y=2012.913mil|Location2.Y=2022.913mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2140mil|Location2.X=3599.803mil|Location1.Y=2012.913mil|Location2.Y=2022.913mil|Absolute=True">Un-Routed Net Constraint: Track (0mm,0mm)(36.825mm,0mm) on Multi-Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2140mil|Location2.X=3599.803mil|Location1.Y=3695.984mil|Location2.Y=3705.984mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2140mil|Location2.X=3599.803mil|Location1.Y=3695.984mil|Location2.Y=3705.984mil|Absolute=True">Un-Routed Net Constraint: Track (0mm,42.75mm)(36.825mm,42.75mm) on Multi-Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3589.803mil|Location2.X=3599.803mil|Location1.Y=2012.913mil|Location2.Y=3705.984mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3589.803mil|Location2.X=3599.803mil|Location1.Y=2012.913mil|Location2.Y=3705.984mil|Absolute=True">Un-Routed Net Constraint: Track (36.825mm,0mm)(36.825mm,42.75mm) on Multi-Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDGNHISFNVGZT4G0L21AQBXSILKBNHLJDRG4THZ0J1E0IRVDYVN4EI"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2360.615mil|Location2.X=2371.865mil|Location1.Y=2894.178mil|Location2.Y=2905.428mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2360.615mil|Location2.X=2371.865mil|Location1.Y=2894.178mil|Location2.Y=2905.428mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.114mm &lt; 0.254mm) Between Pad ANT_433-3(2.921mm,22.595mm) on Top Layer And Via (6mm,22.4mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.114mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2796.434mil|Location2.X=2807.684mil|Location1.Y=2795.753mil|Location2.Y=2807.003mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2796.434mil|Location2.X=2807.684mil|Location1.Y=2795.753mil|Location2.Y=2807.003mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.231mm &lt; 0.254mm) Between Pad C1-2(17.18mm,19.611mm) on Bottom Layer And Via (16.25mm,19.9mm) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.231mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.403mil|Location2.X=2809.653mil|Location1.Y=2703.233mil|Location2.Y=2714.483mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2798.403mil|Location2.X=2809.653mil|Location1.Y=2703.233mil|Location2.Y=2714.483mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.131mm &lt; 0.254mm) Between Pad C2-2(17.18mm,17.579mm) on Bottom Layer And Via (16.35mm,17.55mm) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.131mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2950.753mil|Location2.X=2962.003mil|Location1.Y=3456.147mil|Location2.Y=3467.397mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2950.753mil|Location2.X=2962.003mil|Location1.Y=3456.147mil|Location2.Y=3467.397mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-1(20.234mm,36.924mm) on Top Layer And Pad CP2103-2(20.234mm,36.424mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2963.253mil|Location2.X=2974.503mil|Location1.Y=3465.989mil|Location2.Y=3477.239mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2963.253mil|Location2.X=2974.503mil|Location1.Y=3465.989mil|Location2.Y=3477.239mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-1(20.234mm,36.924mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3023.588mil|Location2.X=3034.838mil|Location1.Y=3294.729mil|Location2.Y=3305.979mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3023.588mil|Location2.X=3034.838mil|Location1.Y=3294.729mil|Location2.Y=3305.979mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-10(22.209mm,32.949mm) on Top Layer And Pad CP2103-11(22.709mm,32.949mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3013.745mil|Location2.X=3024.995mil|Location1.Y=3336.757mil|Location2.Y=3348.007mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3013.745mil|Location2.X=3024.995mil|Location1.Y=3336.757mil|Location2.Y=3348.007mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-10(22.209mm,32.949mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3003.903mil|Location2.X=3015.153mil|Location1.Y=3294.729mil|Location2.Y=3305.979mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3003.903mil|Location2.X=3015.153mil|Location1.Y=3294.729mil|Location2.Y=3305.979mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-10(22.209mm,32.949mm) on Top Layer And Pad CP2103-9(21.709mm,32.949mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3043.273mil|Location2.X=3054.523mil|Location1.Y=3294.729mil|Location2.Y=3305.979mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3043.273mil|Location2.X=3054.523mil|Location1.Y=3294.729mil|Location2.Y=3305.979mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-11(22.709mm,32.949mm) on Top Layer And Pad CP2103-12(23.209mm,32.949mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3033.431mil|Location2.X=3044.681mil|Location1.Y=3336.757mil|Location2.Y=3348.007mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3033.431mil|Location2.X=3044.681mil|Location1.Y=3336.757mil|Location2.Y=3348.007mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-11(22.709mm,32.949mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3062.958mil|Location2.X=3074.208mil|Location1.Y=3294.729mil|Location2.Y=3305.979mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3062.958mil|Location2.X=3074.208mil|Location1.Y=3294.729mil|Location2.Y=3305.979mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-12(23.209mm,32.949mm) on Top Layer And Pad CP2103-13(23.709mm,32.949mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3053.115mil|Location2.X=3064.365mil|Location1.Y=3336.757mil|Location2.Y=3348.007mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3053.115mil|Location2.X=3064.365mil|Location1.Y=3336.757mil|Location2.Y=3348.007mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-12(23.209mm,32.949mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3082.643mil|Location2.X=3093.893mil|Location1.Y=3294.729mil|Location2.Y=3305.979mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3082.643mil|Location2.X=3093.893mil|Location1.Y=3294.729mil|Location2.Y=3305.979mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-13(23.709mm,32.949mm) on Top Layer And Pad CP2103-14(24.209mm,32.949mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3072.801mil|Location2.X=3084.051mil|Location1.Y=3336.757mil|Location2.Y=3348.007mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3072.801mil|Location2.X=3084.051mil|Location1.Y=3336.757mil|Location2.Y=3348.007mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-13(23.709mm,32.949mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3092.485mil|Location2.X=3103.735mil|Location1.Y=3336.757mil|Location2.Y=3348.007mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3092.485mil|Location2.X=3103.735mil|Location1.Y=3336.757mil|Location2.Y=3348.007mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-14(24.209mm,32.949mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3145.635mil|Location2.X=3156.885mil|Location1.Y=3357.722mil|Location2.Y=3368.972mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3145.635mil|Location2.X=3156.885mil|Location1.Y=3357.722mil|Location2.Y=3368.972mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-15(25.184mm,33.924mm) on Top Layer And Pad CP2103-16(25.184mm,34.424mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3103.608mil|Location2.X=3114.858mil|Location1.Y=3347.879mil|Location2.Y=3359.129mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3103.608mil|Location2.X=3114.858mil|Location1.Y=3347.879mil|Location2.Y=3359.129mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-15(25.184mm,33.924mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3145.635mil|Location2.X=3156.885mil|Location1.Y=3377.407mil|Location2.Y=3388.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3145.635mil|Location2.X=3156.885mil|Location1.Y=3377.407mil|Location2.Y=3388.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-16(25.184mm,34.424mm) on Top Layer And Pad CP2103-17(25.184mm,34.924mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3103.608mil|Location2.X=3114.858mil|Location1.Y=3367.565mil|Location2.Y=3378.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3103.608mil|Location2.X=3114.858mil|Location1.Y=3367.565mil|Location2.Y=3378.815mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-16(25.184mm,34.424mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3145.635mil|Location2.X=3156.885mil|Location1.Y=3397.092mil|Location2.Y=3408.342mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3145.635mil|Location2.X=3156.885mil|Location1.Y=3397.092mil|Location2.Y=3408.342mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-17(25.184mm,34.924mm) on Top Layer And Pad CP2103-18(25.184mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3103.608mil|Location2.X=3114.858mil|Location1.Y=3387.249mil|Location2.Y=3398.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3103.608mil|Location2.X=3114.858mil|Location1.Y=3387.249mil|Location2.Y=3398.499mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-17(25.184mm,34.924mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3145.635mil|Location2.X=3156.885mil|Location1.Y=3416.777mil|Location2.Y=3428.027mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3145.635mil|Location2.X=3156.885mil|Location1.Y=3416.777mil|Location2.Y=3428.027mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-18(25.184mm,35.424mm) on Top Layer And Pad CP2103-19(25.184mm,35.924mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3103.608mil|Location2.X=3114.858mil|Location1.Y=3406.935mil|Location2.Y=3418.185mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3103.608mil|Location2.X=3114.858mil|Location1.Y=3406.935mil|Location2.Y=3418.185mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-18(25.184mm,35.424mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3145.635mil|Location2.X=3156.885mil|Location1.Y=3436.462mil|Location2.Y=3447.712mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3145.635mil|Location2.X=3156.885mil|Location1.Y=3436.462mil|Location2.Y=3447.712mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-19(25.184mm,35.924mm) on Top Layer And Pad CP2103-20(25.184mm,36.424mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3103.608mil|Location2.X=3114.858mil|Location1.Y=3426.619mil|Location2.Y=3437.869mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3103.608mil|Location2.X=3114.858mil|Location1.Y=3426.619mil|Location2.Y=3437.869mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-19(25.184mm,35.924mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2963.253mil|Location2.X=2974.503mil|Location1.Y=3446.305mil|Location2.Y=3457.555mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2963.253mil|Location2.X=2974.503mil|Location1.Y=3446.305mil|Location2.Y=3457.555mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-2(20.234mm,36.424mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2950.753mil|Location2.X=2962.003mil|Location1.Y=3436.462mil|Location2.Y=3447.712mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2950.753mil|Location2.X=2962.003mil|Location1.Y=3436.462mil|Location2.Y=3447.712mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-2(20.234mm,36.424mm) on Top Layer And Pad CP2103-3(20.234mm,35.924mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3145.635mil|Location2.X=3156.885mil|Location1.Y=3456.147mil|Location2.Y=3467.397mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3145.635mil|Location2.X=3156.885mil|Location1.Y=3456.147mil|Location2.Y=3467.397mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-20(25.184mm,36.424mm) on Top Layer And Pad CP2103-21(25.184mm,36.924mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3103.608mil|Location2.X=3114.858mil|Location1.Y=3446.305mil|Location2.Y=3457.555mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3103.608mil|Location2.X=3114.858mil|Location1.Y=3446.305mil|Location2.Y=3457.555mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-20(25.184mm,36.424mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3103.608mil|Location2.X=3114.858mil|Location1.Y=3465.989mil|Location2.Y=3477.239mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3103.608mil|Location2.X=3114.858mil|Location1.Y=3465.989mil|Location2.Y=3477.239mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-21(25.184mm,36.924mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3082.643mil|Location2.X=3093.893mil|Location1.Y=3489.611mil|Location2.Y=3500.861mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3082.643mil|Location2.X=3093.893mil|Location1.Y=3489.611mil|Location2.Y=3500.861mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-22(24.209mm,37.899mm) on Top Layer And Pad CP2103-23(23.709mm,37.899mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3092.485mil|Location2.X=3103.735mil|Location1.Y=3477.112mil|Location2.Y=3488.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3092.485mil|Location2.X=3103.735mil|Location1.Y=3477.112mil|Location2.Y=3488.362mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-22(24.209mm,37.899mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3062.958mil|Location2.X=3074.208mil|Location1.Y=3489.611mil|Location2.Y=3500.861mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3062.958mil|Location2.X=3074.208mil|Location1.Y=3489.611mil|Location2.Y=3500.861mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-23(23.709mm,37.899mm) on Top Layer And Pad CP2103-24(23.209mm,37.899mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3072.801mil|Location2.X=3084.051mil|Location1.Y=3477.112mil|Location2.Y=3488.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3072.801mil|Location2.X=3084.051mil|Location1.Y=3477.112mil|Location2.Y=3488.362mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-23(23.709mm,37.899mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3043.273mil|Location2.X=3054.523mil|Location1.Y=3489.611mil|Location2.Y=3500.861mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3043.273mil|Location2.X=3054.523mil|Location1.Y=3489.611mil|Location2.Y=3500.861mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-24(23.209mm,37.899mm) on Top Layer And Pad CP2103-25(22.709mm,37.899mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3053.115mil|Location2.X=3064.365mil|Location1.Y=3477.112mil|Location2.Y=3488.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3053.115mil|Location2.X=3064.365mil|Location1.Y=3477.112mil|Location2.Y=3488.362mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-24(23.209mm,37.899mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3023.588mil|Location2.X=3034.838mil|Location1.Y=3489.611mil|Location2.Y=3500.861mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3023.588mil|Location2.X=3034.838mil|Location1.Y=3489.611mil|Location2.Y=3500.861mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-25(22.709mm,37.899mm) on Top Layer And Pad CP2103-26(22.209mm,37.899mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3033.431mil|Location2.X=3044.681mil|Location1.Y=3477.112mil|Location2.Y=3488.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3033.431mil|Location2.X=3044.681mil|Location1.Y=3477.112mil|Location2.Y=3488.362mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-25(22.709mm,37.899mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3003.903mil|Location2.X=3015.153mil|Location1.Y=3489.611mil|Location2.Y=3500.861mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3003.903mil|Location2.X=3015.153mil|Location1.Y=3489.611mil|Location2.Y=3500.861mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-26(22.209mm,37.899mm) on Top Layer And Pad CP2103-27(21.709mm,37.899mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3013.745mil|Location2.X=3024.995mil|Location1.Y=3477.112mil|Location2.Y=3488.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3013.745mil|Location2.X=3024.995mil|Location1.Y=3477.112mil|Location2.Y=3488.362mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-26(22.209mm,37.899mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2984.218mil|Location2.X=2995.468mil|Location1.Y=3489.611mil|Location2.Y=3500.861mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2984.218mil|Location2.X=2995.468mil|Location1.Y=3489.611mil|Location2.Y=3500.861mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-27(21.709mm,37.899mm) on Top Layer And Pad CP2103-28(21.209mm,37.899mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2994.061mil|Location2.X=3005.311mil|Location1.Y=3477.112mil|Location2.Y=3488.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2994.061mil|Location2.X=3005.311mil|Location1.Y=3477.112mil|Location2.Y=3488.362mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-27(21.709mm,37.899mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2974.375mil|Location2.X=2985.625mil|Location1.Y=3477.112mil|Location2.Y=3488.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2974.375mil|Location2.X=2985.625mil|Location1.Y=3477.112mil|Location2.Y=3488.362mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-28(21.209mm,37.899mm) on Top Layer And Pad CP2103-29(22.709mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2963.253mil|Location2.X=2974.503mil|Location1.Y=3426.619mil|Location2.Y=3437.869mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2963.253mil|Location2.X=2974.503mil|Location1.Y=3426.619mil|Location2.Y=3437.869mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-29(22.709mm,35.424mm) on Top Layer And Pad CP2103-3(20.234mm,35.924mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2963.253mil|Location2.X=2974.503mil|Location1.Y=3406.935mil|Location2.Y=3418.185mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2963.253mil|Location2.X=2974.503mil|Location1.Y=3406.935mil|Location2.Y=3418.185mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-29(22.709mm,35.424mm) on Top Layer And Pad CP2103-4(20.234mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2963.253mil|Location2.X=2974.503mil|Location1.Y=3387.249mil|Location2.Y=3398.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2963.253mil|Location2.X=2974.503mil|Location1.Y=3387.249mil|Location2.Y=3398.499mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-29(22.709mm,35.424mm) on Top Layer And Pad CP2103-5(20.234mm,34.924mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2963.253mil|Location2.X=2974.503mil|Location1.Y=3367.565mil|Location2.Y=3378.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2963.253mil|Location2.X=2974.503mil|Location1.Y=3367.565mil|Location2.Y=3378.815mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-29(22.709mm,35.424mm) on Top Layer And Pad CP2103-6(20.234mm,34.424mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2963.253mil|Location2.X=2974.503mil|Location1.Y=3347.879mil|Location2.Y=3359.129mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2963.253mil|Location2.X=2974.503mil|Location1.Y=3347.879mil|Location2.Y=3359.129mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-29(22.709mm,35.424mm) on Top Layer And Pad CP2103-7(20.234mm,33.924mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2974.375mil|Location2.X=2985.625mil|Location1.Y=3336.757mil|Location2.Y=3348.007mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2974.375mil|Location2.X=2985.625mil|Location1.Y=3336.757mil|Location2.Y=3348.007mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-29(22.709mm,35.424mm) on Top Layer And Pad CP2103-8(21.209mm,32.949mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2994.061mil|Location2.X=3005.311mil|Location1.Y=3336.757mil|Location2.Y=3348.007mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2994.061mil|Location2.X=3005.311mil|Location1.Y=3336.757mil|Location2.Y=3348.007mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.232mm &lt; 0.254mm) Between Pad CP2103-29(22.709mm,35.424mm) on Top Layer And Pad CP2103-9(21.709mm,32.949mm) on Top Layer [Top Solder] Mask Sliver [0.232mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2950.753mil|Location2.X=2962.003mil|Location1.Y=3416.777mil|Location2.Y=3428.027mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2950.753mil|Location2.X=2962.003mil|Location1.Y=3416.777mil|Location2.Y=3428.027mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-3(20.234mm,35.924mm) on Top Layer And Pad CP2103-4(20.234mm,35.424mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2950.753mil|Location2.X=2962.003mil|Location1.Y=3397.092mil|Location2.Y=3408.342mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2950.753mil|Location2.X=2962.003mil|Location1.Y=3397.092mil|Location2.Y=3408.342mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-4(20.234mm,35.424mm) on Top Layer And Pad CP2103-5(20.234mm,34.924mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2950.753mil|Location2.X=2962.003mil|Location1.Y=3377.407mil|Location2.Y=3388.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2950.753mil|Location2.X=2962.003mil|Location1.Y=3377.407mil|Location2.Y=3388.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-5(20.234mm,34.924mm) on Top Layer And Pad CP2103-6(20.234mm,34.424mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2950.753mil|Location2.X=2962.003mil|Location1.Y=3357.722mil|Location2.Y=3368.972mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2950.753mil|Location2.X=2962.003mil|Location1.Y=3357.722mil|Location2.Y=3368.972mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-6(20.234mm,34.424mm) on Top Layer And Pad CP2103-7(20.234mm,33.924mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2984.218mil|Location2.X=2995.468mil|Location1.Y=3294.729mil|Location2.Y=3305.979mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2984.218mil|Location2.X=2995.468mil|Location1.Y=3294.729mil|Location2.Y=3305.979mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.254mm) Between Pad CP2103-8(21.209mm,32.949mm) on Top Layer And Pad CP2103-9(21.709mm,32.949mm) on Top Layer [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2835.769mil|Location2.X=2847.019mil|Location1.Y=2130.93mil|Location2.Y=2142.18mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2835.769mil|Location2.X=2847.019mil|Location1.Y=2130.93mil|Location2.Y=2142.18mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.188mm &lt; 0.254mm) Between Pad DS1-1(18.161mm,3.609mm) on Top Layer And Pad R1-1(18.015mm,2.593mm) on Top Layer [Top Solder] Mask Sliver [0.188mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2874.123mil|Location2.X=2885.373mil|Location1.Y=2130.93mil|Location2.Y=2142.18mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2874.123mil|Location2.X=2885.373mil|Location1.Y=2130.93mil|Location2.Y=2142.18mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.188mm &lt; 0.254mm) Between Pad DS1-1(18.161mm,3.609mm) on Top Layer And Pad R1-2(18.815mm,2.593mm) on Top Layer [Top Solder] Mask Sliver [0.188mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2832.389mil|Location2.X=2845.295mil|Location1.Y=2178.561mil|Location2.Y=2189.811mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2832.389mil|Location2.X=2845.295mil|Location1.Y=2178.561mil|Location2.Y=2189.811mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.253mm &lt; 0.254mm) Between Pad DS1-1(18.161mm,3.609mm) on Top Layer And Via (17.4mm,4.625mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.253mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2930.021mil|Location2.X=2941.271mil|Location1.Y=2130.93mil|Location2.Y=2142.18mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2930.021mil|Location2.X=2941.271mil|Location1.Y=2130.93mil|Location2.Y=2142.18mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.188mm &lt; 0.254mm) Between Pad DS2-1(20.574mm,3.609mm) on Top Layer And Pad R2-1(20.409mm,2.593mm) on Top Layer [Top Solder] Mask Sliver [0.188mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2969.123mil|Location2.X=2980.373mil|Location1.Y=2130.93mil|Location2.Y=2142.18mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2969.123mil|Location2.X=2980.373mil|Location1.Y=2130.93mil|Location2.Y=2142.18mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.188mm &lt; 0.254mm) Between Pad DS2-1(20.574mm,3.609mm) on Top Layer And Pad R2-2(21.209mm,2.593mm) on Top Layer [Top Solder] Mask Sliver [0.188mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2948.43mil|Location2.X=2959.68mil|Location1.Y=2235.95mil|Location2.Y=2247.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2948.43mil|Location2.X=2959.68mil|Location1.Y=2235.95mil|Location2.Y=2247.2mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.141mm &lt; 0.254mm) Between Pad DS2-2(20.574mm,5.109mm) on Top Layer And Via (20.55mm,6.075mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.141mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3020.769mil|Location2.X=3032.019mil|Location1.Y=2131.168mil|Location2.Y=2142.418mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3020.769mil|Location2.X=3032.019mil|Location1.Y=2131.168mil|Location2.Y=2142.418mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.2mm &lt; 0.254mm) Between Pad DS3-1(22.86mm,3.621mm) on Top Layer And Pad R3-1(22.714mm,2.593mm) on Top Layer [Top Solder] Mask Sliver [0.2mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3059.119mil|Location2.X=3070.369mil|Location1.Y=2131.168mil|Location2.Y=2142.418mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3059.119mil|Location2.X=3070.369mil|Location1.Y=2131.168mil|Location2.Y=2142.418mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.2mm &lt; 0.254mm) Between Pad DS3-1(22.86mm,3.621mm) on Top Layer And Pad R3-2(23.514mm,2.593mm) on Top Layer [Top Solder] Mask Sliver [0.2mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3026.541mil|Location2.X=3037.791mil|Location1.Y=2234.643mil|Location2.Y=2245.893mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3026.541mil|Location2.X=3037.791mil|Location1.Y=2234.643mil|Location2.Y=2245.893mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.05mm &lt; 0.254mm) Between Pad DS3-2(22.86mm,5.121mm) on Top Layer And Via (22.534mm,5.997mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.05mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2953.351mil|Location2.X=2964.601mil|Location1.Y=3173.153mil|Location2.Y=3184.403mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2953.351mil|Location2.X=2964.601mil|Location1.Y=3173.153mil|Location2.Y=3184.403mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.254mm) Between Pad DS4-2(20.713mm,30.025mm) on Top Layer And Via (20.675mm,29.125mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2270.1mil|Location2.X=2281.35mil|Location1.Y=3474.966mil|Location2.Y=3486.216mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2270.1mil|Location2.X=2281.35mil|Location1.Y=3474.966mil|Location2.Y=3486.216mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.047mm &lt; 0.254mm) Between Pad J3-1(4.097mm,37.477mm) on Top Layer And Pad J3-2(4.097mm,36.827mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2300.675mil|Location2.X=2311.925mil|Location1.Y=3501.048mil|Location2.Y=3512.298mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2300.675mil|Location2.X=2311.925mil|Location1.Y=3501.048mil|Location2.Y=3512.298mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.072mm &lt; 0.254mm) Between Pad J3-1(4.097mm,37.477mm) on Top Layer And Pad J3-6(4.097mm,38.677mm) on Multi-Layer [Top Solder] Mask Sliver [0.072mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2270.1mil|Location2.X=2281.35mil|Location1.Y=3449.375mil|Location2.Y=3460.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2270.1mil|Location2.X=2281.35mil|Location1.Y=3449.375mil|Location2.Y=3460.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.047mm &lt; 0.254mm) Between Pad J3-2(4.097mm,36.827mm) on Top Layer And Pad J3-3(4.097mm,36.177mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2270.1mil|Location2.X=2281.35mil|Location1.Y=3423.784mil|Location2.Y=3435.034mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2270.1mil|Location2.X=2281.35mil|Location1.Y=3423.784mil|Location2.Y=3435.034mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.047mm &lt; 0.254mm) Between Pad J3-3(4.097mm,36.177mm) on Top Layer And Pad J3-4(4.097mm,35.527mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2270.1mil|Location2.X=2281.35mil|Location1.Y=3398.194mil|Location2.Y=3409.444mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2270.1mil|Location2.X=2281.35mil|Location1.Y=3398.194mil|Location2.Y=3409.444mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.047mm &lt; 0.254mm) Between Pad J3-4(4.097mm,35.527mm) on Top Layer And Pad J3-5(4.097mm,34.877mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2334.862mil|Location2.X=2346.112mil|Location1.Y=3395.935mil|Location2.Y=3407.211mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2334.862mil|Location2.X=2346.112mil|Location1.Y=3395.935mil|Location2.Y=3407.211mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.244mm &lt; 0.254mm) Between Pad J3-4(4.097mm,35.527mm) on Top Layer And Via (5.3mm,34.85mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.244mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2300.675mil|Location2.X=2311.925mil|Location1.Y=3372.112mil|Location2.Y=3383.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2300.675mil|Location2.X=2311.925mil|Location1.Y=3372.112mil|Location2.Y=3383.362mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.072mm &lt; 0.254mm) Between Pad J3-5(4.097mm,34.877mm) on Top Layer And Pad J3-7(4.097mm,33.677mm) on Multi-Layer [Top Solder] Mask Sliver [0.072mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2333.273mil|Location2.X=2344.523mil|Location1.Y=3384.336mil|Location2.Y=3395.586mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2333.273mil|Location2.X=2344.523mil|Location1.Y=3384.336mil|Location2.Y=3395.586mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.103mm &lt; 0.254mm) Between Pad J3-5(4.097mm,34.877mm) on Top Layer And Via (5.3mm,34.85mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.103mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2864.375mil|Location2.X=2875.625mil|Location1.Y=2101.517mil|Location2.Y=2112.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2864.375mil|Location2.X=2875.625mil|Location1.Y=2101.517mil|Location2.Y=2112.767mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.147mm &lt; 0.254mm) Between Pad R1-1(18.015mm,2.593mm) on Top Layer And Pad R1-2(18.815mm,2.593mm) on Top Layer [Top Solder] Mask Sliver [0.147mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2958.627mil|Location2.X=2969.877mil|Location1.Y=2101.517mil|Location2.Y=2112.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2958.627mil|Location2.X=2969.877mil|Location1.Y=2101.517mil|Location2.Y=2112.767mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.147mm &lt; 0.254mm) Between Pad R2-1(20.409mm,2.593mm) on Top Layer And Pad R2-2(21.209mm,2.593mm) on Top Layer [Top Solder] Mask Sliver [0.147mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3049.375mil|Location2.X=3060.625mil|Location1.Y=2101.517mil|Location2.Y=2112.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3049.375mil|Location2.X=3060.625mil|Location1.Y=2101.517mil|Location2.Y=2112.767mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.147mm &lt; 0.254mm) Between Pad R3-1(22.714mm,2.593mm) on Top Layer And Pad R3-2(23.514mm,2.593mm) on Top Layer [Top Solder] Mask Sliver [0.147mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3077.43mil|Location2.X=3088.68mil|Location1.Y=3205.202mil|Location2.Y=3216.452mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3077.43mil|Location2.X=3088.68mil|Location1.Y=3205.202mil|Location2.Y=3216.452mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.147mm &lt; 0.254mm) Between Pad R8-1(23.5mm,29.9mm) on Top Layer And Pad R8-2(23.5mm,30.7mm) on Top Layer [Top Solder] Mask Sliver [0.147mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3440.556mil|Location2.X=3451.806mil|Location1.Y=3127.907mil|Location2.Y=3139.157mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3440.556mil|Location2.X=3451.806mil|Location1.Y=3127.907mil|Location2.Y=3139.157mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.179mm &lt; 0.254mm) Between Pad RN2483-1(33.401mm,27.485mm) on Top Layer And Via (33.05mm,28.75mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.179mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2788.981mil|Location2.X=2800.231mil|Location1.Y=3128.399mil|Location2.Y=3139.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2788.981mil|Location2.X=2800.231mil|Location1.Y=3128.399mil|Location2.Y=3139.649mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.204mm &lt; 0.254mm) Between Pad RN2483-14(16.891mm,27.485mm) on Top Layer And Via (16.5mm,28.775mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.204mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2503.548mil|Location2.X=2514.798mil|Location1.Y=3127.907mil|Location2.Y=3139.157mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2503.548mil|Location2.X=2514.798mil|Location1.Y=3127.907mil|Location2.Y=3139.157mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.179mm &lt; 0.254mm) Between Pad RN2483-20(9.271mm,27.485mm) on Top Layer And Via (9.25mm,28.75mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.179mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2424.072mil|Location2.X=2435.322mil|Location1.Y=2831.186mil|Location2.Y=2842.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2424.072mil|Location2.X=2435.322mil|Location1.Y=2831.186mil|Location2.Y=2842.436mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.015mm &lt; 0.254mm) Between Pad RN2483-22(8.001mm,21.135mm) on Top Layer And Via (6.9mm,20.8mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.015mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2421.662mil|Location2.X=2433.27mil|Location1.Y=2817.791mil|Location2.Y=2829.041mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2421.662mil|Location2.X=2433.27mil|Location1.Y=2817.791mil|Location2.Y=2829.041mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.222mm &lt; 0.254mm) Between Pad RN2483-23(8.001mm,19.865mm) on Top Layer And Via (6.9mm,20.8mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.222mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2424.072mil|Location2.X=2435.322mil|Location1.Y=2743.588mil|Location2.Y=2754.838mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2424.072mil|Location2.X=2435.322mil|Location1.Y=2743.588mil|Location2.Y=2754.838mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.015mm &lt; 0.254mm) Between Pad RN2483-24(8.001mm,18.595mm) on Top Layer And Via (6.9mm,18.575mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.015mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2423.088mil|Location2.X=2434.338mil|Location1.Y=2643.194mil|Location2.Y=2654.444mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2423.088mil|Location2.X=2434.338mil|Location1.Y=2643.194mil|Location2.Y=2654.444mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.065mm &lt; 0.254mm) Between Pad RN2483-26(8.001mm,16.055mm) on Top Layer And Via (6.85mm,16.025mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.065mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2490.753mil|Location2.X=2502.003mil|Location1.Y=2362.517mil|Location2.Y=2373.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2490.753mil|Location2.X=2502.003mil|Location1.Y=2362.517mil|Location2.Y=2373.767mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.094mm &lt; 0.254mm) Between Pad RN2483-28(9.271mm,9.705mm) on Top Layer And Via (8.925mm,8.525mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.094mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2748.627mil|Location2.X=2759.877mil|Location1.Y=2427.021mil|Location2.Y=2438.271mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2748.627mil|Location2.X=2759.877mil|Location1.Y=2427.021mil|Location2.Y=2438.271mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.134mm &lt; 0.254mm) Between Pad RN2483-33(15.621mm,9.705mm) on Top Layer And Via (15.475mm,10.925mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.134mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3155.123mil|Location2.X=3166.373mil|Location1.Y=2427.021mil|Location2.Y=2438.271mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3155.123mil|Location2.X=3166.373mil|Location1.Y=2427.021mil|Location2.Y=2438.271mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.134mm &lt; 0.254mm) Between Pad RN2483-41(25.781mm,9.705mm) on Top Layer And Via (25.8mm,10.925mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.134mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3104.926mil|Location2.X=3116.176mil|Location1.Y=3127.414mil|Location2.Y=3138.664mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3104.926mil|Location2.X=3116.176mil|Location1.Y=3127.414mil|Location2.Y=3138.664mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.154mm &lt; 0.254mm) Between Pad RN2483-8(24.511mm,27.485mm) on Top Layer And Via (24.525mm,28.725mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.154mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2748.209mil|Location2.X=2759.459mil|Location1.Y=3362.844mil|Location2.Y=3374.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2748.209mil|Location2.X=2759.459mil|Location1.Y=3362.844mil|Location2.Y=3374.094mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.204mm &lt; 0.254mm) Between Via (15.4mm,34.725mm) from Top Layer to Bottom Layer And Via (15.529mm,33.883mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.204mm] / [Bottom Solder] Mask Sliver [0.204mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2836.805mil|Location2.X=2848.055mil|Location1.Y=3452.249mil|Location2.Y=3463.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2836.805mil|Location2.X=2848.055mil|Location1.Y=3452.249mil|Location2.Y=3463.499mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.223mm &lt; 0.254mm) Between Via (17.279mm,36.575mm) from Top Layer to Bottom Layer And Via (18.15mm,36.575mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.223mm] / [Bottom Solder] Mask Sliver [0.223mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDFWZB03UT0LBNOJA2E4ZBV5XKTCL4ZD1ESXXJZWHNRPZ11AOYPGBL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.353mil|Location2.X=3164.603mil|Location1.Y=3347.879mil|Location2.Y=3359.129mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.353mil|Location2.X=3164.603mil|Location1.Y=3347.879mil|Location2.Y=3359.129mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.192mm &lt; 0.254mm) Between Pad CP2103-15(25.184mm,33.924mm) on Top Layer And Track (25.951mm,32.406mm)(25.951mm,36.756mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.192mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.353mil|Location2.X=3164.603mil|Location1.Y=3367.565mil|Location2.Y=3378.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.353mil|Location2.X=3164.603mil|Location1.Y=3367.565mil|Location2.Y=3378.815mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.192mm &lt; 0.254mm) Between Pad CP2103-16(25.184mm,34.424mm) on Top Layer And Track (25.951mm,32.406mm)(25.951mm,36.756mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.192mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.353mil|Location2.X=3164.603mil|Location1.Y=3387.249mil|Location2.Y=3398.499mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.353mil|Location2.X=3164.603mil|Location1.Y=3387.249mil|Location2.Y=3398.499mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.192mm &lt; 0.254mm) Between Pad CP2103-17(25.184mm,34.924mm) on Top Layer And Track (25.951mm,32.406mm)(25.951mm,36.756mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.192mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.353mil|Location2.X=3164.603mil|Location1.Y=3406.935mil|Location2.Y=3418.185mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.353mil|Location2.X=3164.603mil|Location1.Y=3406.935mil|Location2.Y=3418.185mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.192mm &lt; 0.254mm) Between Pad CP2103-18(25.184mm,35.424mm) on Top Layer And Track (25.951mm,32.406mm)(25.951mm,36.756mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.192mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.353mil|Location2.X=3164.603mil|Location1.Y=3426.619mil|Location2.Y=3437.869mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.353mil|Location2.X=3164.603mil|Location1.Y=3426.619mil|Location2.Y=3437.869mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.192mm &lt; 0.254mm) Between Pad CP2103-19(25.184mm,35.924mm) on Top Layer And Track (25.951mm,32.406mm)(25.951mm,36.756mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.192mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.353mil|Location2.X=3164.603mil|Location1.Y=3446.305mil|Location2.Y=3457.555mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.353mil|Location2.X=3164.603mil|Location1.Y=3446.305mil|Location2.Y=3457.555mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.192mm &lt; 0.254mm) Between Pad CP2103-20(25.184mm,36.424mm) on Top Layer And Track (25.951mm,32.406mm)(25.951mm,36.756mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.192mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.365mil|Location2.X=3164.615mil|Location1.Y=3462.71mil|Location2.Y=3475.935mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.365mil|Location2.X=3164.615mil|Location1.Y=3462.71mil|Location2.Y=3475.935mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.226mm &lt; 0.254mm) Between Pad CP2103-21(25.184mm,36.924mm) on Top Layer And Track (25.951mm,32.406mm)(25.951mm,36.756mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.226mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.365mil|Location2.X=3164.615mil|Location1.Y=3462.71mil|Location2.Y=3475.935mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3153.365mil|Location2.X=3164.615mil|Location1.Y=3462.71mil|Location2.Y=3475.935mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.226mm &lt; 0.254mm) Between Pad CP2103-21(25.184mm,36.924mm) on Top Layer And Track (25.951mm,36.756mm)(28.151mm,36.756mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.226mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDBMOX3CVZXLM2GA0F5VP3GHY0UKWV31XLYRCVSHOA1L310WEFW4M"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2432.312mil|Location2.X=2443.562mil|Location1.Y=3596.104mil|Location2.Y=3607.354mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2432.312mil|Location2.X=2443.562mil|Location1.Y=3596.104mil|Location2.Y=3607.354mil|Absolute=True">Silk To Silk Clearance Constraint: (0.181mm &lt; 0.254mm) Between Text "C3" (7.595mm,39.604mm) on Top Overlay And Track (7.25mm,39.65mm)(7.25mm,40.35mm) on Top Overlay Silk Text to Silk Clearance [0.181mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2631.29mil|Location2.X=2642.54mil|Location1.Y=2921.365mil|Location2.Y=2932.615mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2631.29mil|Location2.X=2642.54mil|Location1.Y=2921.365mil|Location2.Y=2932.615mil|Absolute=True">Silk To Silk Clearance Constraint: (0.209mm &lt; 0.254mm) Between Text "R4" (15.265mm,22.329mm) on Bottom Overlay And Text "R7" (12.263mm,22.794mm) on Bottom Overlay Silk Text to Silk Clearance [0.209mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2622.173mil|Location2.X=2633.423mil|Location1.Y=2958.959mil|Location2.Y=2970.209mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Roland\Desktop\avionics-hardware\2022-2023 PCBs Work in Progress\GND_REVB\GND_REVB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2622.173mil|Location2.X=2633.423mil|Location1.Y=2958.959mil|Location2.Y=2970.209mil|Absolute=True">Silk To Silk Clearance Constraint: (0.249mm &lt; 0.254mm) Between Text "R7" (12.263mm,22.794mm) on Bottom Overlay And Track (11.429mm,24.27mm)(12.701mm,24.27mm) on Bottom Overlay Silk Text to Silk Clearance [0.249mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

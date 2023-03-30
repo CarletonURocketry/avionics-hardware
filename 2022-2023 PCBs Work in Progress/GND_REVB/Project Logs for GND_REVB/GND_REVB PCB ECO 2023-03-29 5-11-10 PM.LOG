@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=V_BUS Pin=C3-2
+Added Pin To Net: NetName=V_BUS Pin=D5-3
+Added Pin To Net: NetName=V_BUS Pin=J3-1
+Added Pin To Net: NetName=USB_D_P Pin=U2-3
+Added Pin To Net: NetName=USB_D_N Pin=U2-4
