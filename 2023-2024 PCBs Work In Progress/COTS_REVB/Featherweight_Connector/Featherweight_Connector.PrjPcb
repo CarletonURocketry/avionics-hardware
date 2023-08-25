@@ -49,7 +49,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=EasyMini_Connector_1.SchDoc
+DocumentPath=Featherweight_Connector_1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -63,7 +63,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=DMABSLCG
+DocumentUniqueId=RAAXABGV
 
 [Configuration1]
 Name=Sources
@@ -1058,23 +1058,10 @@ NetClassManualEnabled=1
 NetClassSeparateForBusSections=0
 
 [LibraryUpdateOptions]
-<<<<<<< Updated upstream
-SelectedOnly=1
-UpdateVariants=1
-UpdateToLatestRevision=1
-PartTypes=0
-ComponentLibIdentifierKind0=Library Name Only
-ComponentLibraryIdentifier0=Americas- CU InSpace-  Carleton University
-ComponentDesignItemID0=CMP-00028-00008-4
-ComponentSymbolReference0=EasyMini-Symbol-1
-ComponentUpdate0=1
-ComponentIsDeviceSheet0=0
-=======
 SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
->>>>>>> Stashed changes
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1088,22 +1075,6 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
-<<<<<<< Updated upstream
-ParameterName0=Comment
-ParameterUpdate0=1
-ParameterName1=Component Kind
-ParameterUpdate1=1
-ParameterName2=Description
-ParameterUpdate2=1
-ParameterName3=Library Reference
-ParameterUpdate3=1
-ModelTypeGroup0=PCBLIB
-ModelTypeUpdate0=1
-ModelType0=PCBLIB
-ModelName0=EasyMini-Footprint-1
-ModelUpdate0=1
-=======
->>>>>>> Stashed changes
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
