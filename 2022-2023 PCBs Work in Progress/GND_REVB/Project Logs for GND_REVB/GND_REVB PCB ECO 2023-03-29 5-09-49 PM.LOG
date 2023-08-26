@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=V_BUS Pin=C3-2
+Removed Pin From Net: NetName=V_BUS Pin=D5-3
+Removed Pin From Net: NetName=V_BUS Pin=J3-1
+Removed Pin From Net: NetName=USB_D_P Pin=U2-3
+Removed Pin From Net: NetName=USB_D_N Pin=U2-4
+Removed Member From Class: ClassName=RN2483 Member=U2
+Add Net: Net with name "USB_D_N" already exists
+Add Net: Net with name "USB_D_P" already exists
+Add Net: Net with name "V_BUS" already exists
+Change Class Name : Old Net Name=RN2483 New Net Name=RADIO
+Change Class Name : Old Net Name=USB_UART New Net Name=USB
+Added Member To Class: ClassName=USB Member=Component C3 C1206C105K5RACTU
+Added Member To Class: ClassName=USB Member=Component D5 SP0504BAHTG
+Added Member To Class: ClassName=USB Member=Component J3 105017-0001
+Added Member To Class: ClassName=RADIO Member=Component J4 142-0701-801
+Added Member To Class: ClassName=RADIO Member=Component U1 RN2483A-I/RM104

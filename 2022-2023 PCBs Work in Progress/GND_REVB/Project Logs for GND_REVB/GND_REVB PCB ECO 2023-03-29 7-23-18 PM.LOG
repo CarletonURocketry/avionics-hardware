@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=NetR1_2 Pin=RN2483-37
+Removed Pin From Net: NetName=NetR2_2 Pin=RN2483-38
+Removed Pin From Net: NetName=NetR3_2 Pin=RN2483-39
+Change Component Designator: OldDesignator=ANT_433 NewDesignator=J4
+Change Component Designator: OldDesignator=DS3 NewDesignator=DS0
+Added Pin To Net: NetName=NetR3_2 Pin=RN2483-35
+Added Pin To Net: NetName=NetR1_2 Pin=RN2483-36
+Added Pin To Net: NetName=NetR2_2 Pin=RN2483-37
+Change Net Name : Old Net Name=NetDS3_1 New Net Name=NetDS0_1
+Change Net Name : Old Net Name=NetR5_1 New Net Name=NetCP2103_9
+Change Net Name : Old Net Name=NetR8_2 New Net Name=NetCP2103_12
+Change Net Name : Old Net Name=NetR10_2 New Net Name=NetCP2103_1
+Added Member To Class: ClassName=RADIO Member=Component RN2483 RN2483A-I/RM104
