@@ -1,0 +1,8 @@
+Change Component Footprint: Designator=Designator92 Old Footprint=CONN_1984785_PXC New Footprint=CONN_1984785_PXC
+Change Component Comment : Designator=Designator92 Old Comment=Comment New Comment=1984785
+Change Component Designator: OldDesignator=Designator92 NewDesignator=J1
+Change Managed Component Library Link : Designator=J1 Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=c67b548f-e22d-434a-818a-50024b41f0b0 Old RevisionGUID= New RevisionGUID=82dc3e3a-e3e7-44cb-9159-7dd0e7453000
+Added Pin To Net: NetName=NetD1_1 Pin=J1-1
+Added Pin To Net: NetName=NetJ1_2 Pin=J1-2
+Added Pin To Net: NetName=NetJ1_3 Pin=J1-3
+Added Pin To Net: NetName=NetJ1_4 Pin=J1-4

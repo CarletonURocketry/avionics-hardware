@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=GPS BAT Out Old Footprint=1984769-Footprint-1 New Footprint=1984769-Footprint-1
+Change Component Comment : Designator=J3 Old Comment=1726480104 New Comment=1984785
+Change Managed Component Library Link : Designator=J3 Old VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID=5bcff3db-5acc-48c2-a867-e66f80ecf817 New ItemGUID=c67b548f-e22d-434a-818a-50024b41f0b0 Old RevisionGUID=63bbf2b6-1c5e-45fc-a351-c8e222b4f759 New RevisionGUID=07794938-00d7-4c21-ad47-103b2e141776
+Change component parameters: Designator = "J3" ("J3"); Footprint = "10126480104-Footprint-1"; UniqueID = "\VMPZHKDK" ("\VMPZHKDK")

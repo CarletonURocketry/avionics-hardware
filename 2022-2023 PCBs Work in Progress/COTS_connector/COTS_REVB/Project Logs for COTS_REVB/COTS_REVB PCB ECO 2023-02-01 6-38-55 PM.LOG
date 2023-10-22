@@ -1,0 +1,28 @@
+Removed Pin From Net: NetName=NetGPS BAT In_2 Pin=GPS BAT Out-
+Removed Pin From Net: NetName=NetGPS BAT In_1 Pin=GPS SW-1
+Change Component Footprint: Designator=Designator83 Old Footprint=CONN_1984785_PXC New Footprint=CONN_1984785_PXC
+Change Component Footprint: Designator=Designator80 Old Footprint=Featherweight-Footprint-1 New Footprint=Featherweight-Footprint-1
+Change Component Footprint: Designator=Designator81 Old Footprint=LiPo Holder-Footprint-1 New Footprint=LiPo Holder-Footprint-1
+Change Component Comment : Designator=Designator81 Old Comment=Comment New Comment=1200mAh LiPo x1 Holder
+Change Component Comment : Designator=Designator83 Old Comment=Comment New Comment=1984785
+Change Component Comment : Designator=Designator80 Old Comment=Comment New Comment=Featherweight
+Change Component Designator: OldDesignator=Designator80 NewDesignator=Featherweight GPS Tracker
+Change Component Designator: OldDesignator=Designator81 NewDesignator=1200 mAh LiPo x1 Holder
+Change Component Designator: OldDesignator=Designator83 NewDesignator=J1
+Change Managed Component Library Link : Designator=Featherweight GPS Tracker Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=3f0fb2d7-5830-4f04-bf97-e947b6510547 Old RevisionGUID= New RevisionGUID=ea7738e2-0ac4-4d79-be66-b897a5f42ff0
+Change Managed Component Library Link : Designator=1200 mAh LiPo x1 Holder Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=269eea31-bda1-4e35-8ecc-cb8738076e34 Old RevisionGUID= New RevisionGUID=5181528b-3112-40c6-970f-a0b65f6b6b56
+Change Managed Component Library Link : Designator=J1 Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=c67b548f-e22d-434a-818a-50024b41f0b0 Old RevisionGUID= New RevisionGUID=d51c5d96-b848-4a1f-90d8-7810e9d661c9
+Add Component: Footprint Not Found CON_1726480106
+Added Pin To Net: NetName=NetGPS BAT In_1 Pin=GPS BAT Out-1
+Add Pin To Net: Unknown Pin: Pin GPS BAT Out-2
+Added Pin To Net: NetName=NetD1_1 Pin=J1-1
+Added Pin To Net: NetName=NetDEP Main_2 Pin=J1-2
+Add Pin To Net: Unknown Pin: Pin J2-3
+Add Pin To Net: Unknown Pin: Pin J2-4
+Add Pin To Net: Unknown Pin: Pin J2-5
+Add Pin To Net: Unknown Pin: Pin J2-6
+Added Pin To Net: NetName=NetALT SW 1_1 Pin=ALT SW 1-1
+Added Pin To Net: NetName=NetALT SW 1_1 Pin=J1-3
+Added Net: Name=NetALT SW 1_1
+Added Pin To Net: NetName=NetALT SW 1_2 Pin=ALT SW 1-2
+Added Net: Name=NetALT SW 1_2

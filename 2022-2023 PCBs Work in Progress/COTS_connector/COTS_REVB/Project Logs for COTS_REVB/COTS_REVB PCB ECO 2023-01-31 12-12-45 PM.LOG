@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=GPS BAT Out Old Footprint=JST_B2B-PH-K-S(LF)(SN) New Footprint=1984769-Footprint-1
+Change Component Comment : Designator=GPS BAT Out Old Comment=B2B-PH-K-S(LF)(SN) New Comment=1984769
+Change Managed Component Library Link : Designator=GPS BAT Out Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=11805ab4-cc39-4837-bdcb-5ef2ba1cfc6e Old RevisionGUID= New RevisionGUID=b50f4a99-284a-45d6-86b3-98320de6fe9b
+Change component parameters: Designator = "GPS BAT Out" ("GPS BAT Out"); Footprint = "JST_B2B-PH-K-S(LF)(SN)"; UniqueID = "\USTJSNZH" ("\USTJSNZH")

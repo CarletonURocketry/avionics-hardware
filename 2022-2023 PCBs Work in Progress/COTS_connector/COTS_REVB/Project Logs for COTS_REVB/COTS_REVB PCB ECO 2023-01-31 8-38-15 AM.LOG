@@ -1,0 +1,30 @@
+Change Component Footprint: Designator=D1 Old Footprint=ONSC-D2PAK-3-418B-04_V New Footprint=ONSC-D2PAK-3-418B-04_V
+Change Component Footprint: Designator=D2 Old Footprint=ONSC-D2PAK-3-418B-04_V New Footprint=ONSC-D2PAK-3-418B-04_V
+Change Component Comment : Designator=1200 mAh Lipo x1 Holder Old Comment=Comment New Comment=1200mAh LiPo x1 Holder
+Change Component Comment : Designator=1200 mAh Lipo x2 Holder Old Comment=Comment New Comment= 
+Change Component Comment : Designator=EasyMini Altimiter 1 Old Comment=Comment New Comment=EasyMini
+Change Component Comment : Designator=EasyMini ALtimiter 2 Old Comment=Comment New Comment=EasyMini
+Change Component Comment : Designator=Featherweight GPS Tracker Old Comment=Comment New Comment=Featherweight
+Change Managed Component Library Link : Designator=1200 mAh Lipo x1 Holder Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=269eea31-bda1-4e35-8ecc-cb8738076e34 Old RevisionGUID= New RevisionGUID=5181528b-3112-40c6-970f-a0b65f6b6b56
+Change Managed Component Library Link : Designator=1200 mAh Lipo x2 Holder Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=5ed4219d-f35b-4909-986a-d702542ddbb6 Old RevisionGUID= New RevisionGUID=78feda81-02d6-4e9a-b6c0-4be04b715a60
+Change Managed Component Library Link : Designator=D1 Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=df760070-fff6-41cc-ab34-e26ceae485a6 Old RevisionGUID= New RevisionGUID=0f18d537-90b5-4f9d-9309-da7cc4269507
+Change Managed Component Library Link : Designator=D2 Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=df760070-fff6-41cc-ab34-e26ceae485a6 Old RevisionGUID= New RevisionGUID=0f18d537-90b5-4f9d-9309-da7cc4269507
+Change Managed Component Library Link : Designator=EasyMini Altimiter 1 Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=d0324e82-2ca5-497e-bbc9-e2cea4cf4e32 Old RevisionGUID= New RevisionGUID=2667c691-abd2-4cb0-b88d-12541840e023
+Change Managed Component Library Link : Designator=EasyMini ALtimiter 2 Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=d0324e82-2ca5-497e-bbc9-e2cea4cf4e32 Old RevisionGUID= New RevisionGUID=2667c691-abd2-4cb0-b88d-12541840e023
+Change Managed Component Library Link : Designator=Featherweight GPS Tracker Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=3f0fb2d7-5830-4f04-bf97-e947b6510547 Old RevisionGUID= New RevisionGUID=ea7738e2-0ac4-4d79-be66-b897a5f42ff0
+Change component parameters: Designator = "D1" ("D1"); Footprint = "ONSC-D2PAK-3-418B-04_V"; UniqueID = "\OWUVDZXP" ("\OWUVDZXP")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "D2PAK"; VariantName = "[No Variations]"
+Change component parameters: Designator = "D2" ("D2"); Footprint = "ONSC-D2PAK-3-418B-04_V"; UniqueID = "\BFZODREC" ("\BFZODREC")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "D2PAK"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=D1-3
+Added Pin To Net: NetName=NetD1_1 Pin=Main 1-1
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetD1_4 Pin=D1-4
+Added Pin To Net: NetName=NetD1_4 Pin=D2-4
+Added Pin To Net: NetName=NetD1_4 Pin=DEP Main-1
+Added Net: Name=NetD1_4
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_1 Pin=D2-3
+Added Pin To Net: NetName=NetD2_1 Pin=Main 2-2
+Added Net: Name=NetD2_1

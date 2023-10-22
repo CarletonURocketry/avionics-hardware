@@ -1,0 +1,11 @@
+Change Component Footprint: Designator=J1 Old Footprint=CONN_1984785_PXC New Footprint=CONN_1984785_PXC
+Change Managed Component Library Link : Designator=J1 Old VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID=c67b548f-e22d-434a-818a-50024b41f0b0 New ItemGUID=c67b548f-e22d-434a-818a-50024b41f0b0 Old RevisionGUID=d51c5d96-b848-4a1f-90d8-7810e9d661c9 New RevisionGUID=a7389491-edc1-402e-930c-a39a635ae537
+Add Component: Footprint Not Found CON_1726480106
+Add Pin To Net: Unknown Pin: Pin GPS BAT Out-2
+Add Pin To Net: Unknown Pin: Pin J1-4
+Add Pin To Net: Unknown Pin: Pin J2-1
+Add Pin To Net: Unknown Pin: Pin J2-2
+Add Pin To Net: Unknown Pin: Pin J2-3
+Add Pin To Net: Unknown Pin: Pin J2-4
+Add Pin To Net: Unknown Pin: Pin J2-5
+Add Pin To Net: Unknown Pin: Pin J2-6

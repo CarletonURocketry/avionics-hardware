@@ -1,0 +1,36 @@
+Removed Pin From Net: NetName=NetALT 2 SW_1 Pin=ALT SW 2-1
+Removed Pin From Net: NetName=NetALT 2 SW_2 Pin=ALT SW 2-2
+Removed Pin From Net: NetName=NetD2_4 Pin=DEP Apogee-1
+Removed Pin From Net: NetName=NetApogee 1_1 Pin=DEP Apogee-2
+Removed Pin From Net: NetName=NetD1_4 Pin=DEP Main-1
+Add Component: Footprint Not Found CON_1726480106
+Added Component: Designator=J3(10126480104-Footprint-1)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fastening Type"; Value = "Ramp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Circuits"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Right Angle"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.165inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "Mini-Fit® Jr™ 172648"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin GPS BAT Out-2
+Add Pin To Net: Unknown Pin: Pin J2-1
+Add Pin To Net: Unknown Pin: Pin J2-2
+Add Pin To Net: Unknown Pin: Pin J2-3
+Add Pin To Net: Unknown Pin: Pin J2-4
+Add Pin To Net: Unknown Pin: Pin J2-5
+Add Pin To Net: Unknown Pin: Pin J2-6
+Added Pin To Net: NetName=NetD1_4 Pin=J3-1
+Added Pin To Net: NetName=NetD2_4 Pin=J3-3
+Added Pin To Net: NetName=NetApogee 1_1 Pin=J3-4
+Added Pin To Net: NetName=NetJ1_2 Pin=J1-2
+Added Pin To Net: NetName=NetJ1_2 Pin=J3-2
+Added Pin To Net: NetName=NetJ1_2 Pin=Main 2-1
+Added Net: Name=NetJ1_2

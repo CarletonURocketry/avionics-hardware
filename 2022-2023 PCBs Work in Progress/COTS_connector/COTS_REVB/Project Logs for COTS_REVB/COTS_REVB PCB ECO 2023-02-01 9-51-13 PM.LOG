@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=NetJ1_4 Pin=J2-1
+Removed Pin From Net: NetName=NetJ1_3 Pin=J2-2
+Change Component Comment : Designator=J2 Old Comment=1726480106 New Comment=172648-0106
+Change Managed Component Library Link : Designator=J2 Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=5530829b-fcc7-4a5c-b142-3c1f7c3baea3 Old RevisionGUID= New RevisionGUID=0f426869-ff22-4d08-ae73-eb587b42722a
+Change component parameters: Designator = "J2" ("J2"); Footprint = "New footprint 1"; UniqueID = "\KIPMHCIC" ("\KIPMHCIC")
+Add Pin To Net: Unknown Pin: Pin GPS BAT Out-2
+Added Pin To Net: NetName=NetJ1_3 Pin=J2-1
+Added Pin To Net: NetName=NetJ1_4 Pin=J2-2
+Added Room: Name=COTS_REVB

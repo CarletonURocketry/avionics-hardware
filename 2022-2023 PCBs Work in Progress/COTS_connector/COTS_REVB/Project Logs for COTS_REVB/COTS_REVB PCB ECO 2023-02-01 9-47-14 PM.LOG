@@ -1,0 +1,39 @@
+Change Footprint: Footprint Not Found CON_1726480106
+Change Component Comment : Designator=J3 Old Comment=Comment New Comment=1726480104
+Change Component Comment : Designator=J2 Old Comment=Comment New Comment=1726480106
+Change Managed Component Library Link : Designator=J3 Old VaultGUID= New VaultGUID=0D51059A-7567-4922-900C-B3DB03C4D13B Old ItemGUID= New ItemGUID=5bcff3db-5acc-48c2-a867-e66f80ecf817 Old RevisionGUID= New RevisionGUID=63bbf2b6-1c5e-45fc-a351-c8e222b4f759
+Change component parameters: Designator = "J2" ("J2"); Footprint = "New footprint 1"; UniqueID = "\EDRJCDIW" ("\EDRJCDIW")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2023 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1726480106"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mfr_Name"; Value = "Molex Connector Corporation"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J3" ("J3"); Footprint = "10126480104-Footprint-1"; UniqueID = "\PBBSEFJU" ("\PBBSEFJU")
+Change component parameters (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Connector Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Fastening Type"; Value = "Ramp"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Circuits"; Value = "4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Orientation"; Value = "Right Angle"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "0.165inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "Mini-Fit® Jr™ 172648"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin GPS BAT Out-2
+Added Pin To Net: NetName=NetJ1_4 Pin=J2-1
+Added Pin To Net: NetName=NetJ1_3 Pin=J2-2
+Added Pin To Net: NetName=NetALT 2 SW_1 Pin=J2-3
+Added Pin To Net: NetName=NetALT 2 SW_2 Pin=J2-4
+Added Pin To Net: NetName=NetGPS BAT In_2 Pin=J2-5
+Added Pin To Net: NetName=NetGPS BAT In_1 Pin=J2-6
+Added Pin To Net: NetName=NetD1_4 Pin=J3-1
+Added Pin To Net: NetName=NetJ1_2 Pin=J3-2
+Added Pin To Net: NetName=NetD2_4 Pin=J3-3
+Added Pin To Net: NetName=NetApogee 1_1 Pin=J3-4
+Added Class: Name=COTS_REVB
+Added Room: Name=COTS_REVB

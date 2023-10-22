@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=NetApogee 1_1 Pin=DEP Apogee-1
+Removed Pin From Net: NetName=NetApogee 1_2 Pin=DEP Apogee-2
+Removed Pin From Net: NetName=NetDEP Main_2 Pin=Main 1-1
+Removed Pin From Net: NetName=NetDEP Main_1 Pin=Main 1-2
+Removed Pin From Net: NetName=NetDEP Main_1 Pin=Main 2-1
+Removed Pin From Net: NetName=NetDEP Main_2 Pin=Main 2-2
+Added Pin To Net: NetName=NetApogee 1_2 Pin=DEP Apogee-1
+Added Pin To Net: NetName=NetApogee 1_1 Pin=DEP Apogee-2
+Added Pin To Net: NetName=NetDEP Main_1 Pin=Main 1-1
+Added Pin To Net: NetName=NetDEP Main_2 Pin=Main 1-2
+Added Pin To Net: NetName=NetDEP Main_2 Pin=Main 2-1
+Added Pin To Net: NetName=NetDEP Main_1 Pin=Main 2-2
